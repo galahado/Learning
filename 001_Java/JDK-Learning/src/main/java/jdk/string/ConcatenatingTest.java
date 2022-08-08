@@ -1,4 +1,4 @@
-package library.string;
+package jdk.string;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package library.arrays;
+package jdk.arrays;
 
 import org.junit.jupiter.api.Test;
 
