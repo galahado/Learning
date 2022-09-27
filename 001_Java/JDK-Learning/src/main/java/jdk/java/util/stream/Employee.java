@@ -1,4 +1,4 @@
-package jdk.stream;
+package jdk.java.util.stream;
 
 /**
  * @author shkstart 邮箱：shkstart@126.com

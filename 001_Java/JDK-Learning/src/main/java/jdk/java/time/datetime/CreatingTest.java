@@ -1,4 +1,4 @@
-package jdk.datetime;
+package jdk.java.time.datetime;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package jdk.arrays;
+package jdk.java.util.arrays;
 
 public class BinarySearchTest {
 

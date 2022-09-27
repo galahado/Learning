@@ -1,4 +1,4 @@
-package jdk.stream;
+package jdk.java.util.stream;
 
 import java.util.ArrayList;
 import java.util.List;
