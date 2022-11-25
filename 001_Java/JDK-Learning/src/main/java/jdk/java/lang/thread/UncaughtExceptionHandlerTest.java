@@ -1,6 +1,4 @@
-package jdk.thread;
-
-import org.junit.jupiter.api.Test;
+package jdk.java.lang.thread;
 
 public class UncaughtExceptionHandlerTest {
 
