@@ -1,4 +1,4 @@
-package jdk.thread.bank;
+package jdk.java.lang.thread.bank;
 
 import java.util.*;
 
