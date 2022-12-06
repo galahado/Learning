@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -7,6 +8,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/001_Java/JDK-Learning/pom.xml" />
+        <option value="$PROJECT_DIR$/001_Java/MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/001_Java/Design-Patterns/pom.xml" />
       </list>
     </option>
   </component>

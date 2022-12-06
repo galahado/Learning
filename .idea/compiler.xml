@@ -6,11 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Design-Patterns" />
         <module name="JDK-Learning" />
+        <module name="MyBatis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JDK-Learning" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
