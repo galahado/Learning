@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b7618ef-9667-4631-abaa-c5e8bf36456c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../JUC/HeiMa/concurrent/java_concurrent/src/main/java/com/heima/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/itheima/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/itheima/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/itheima/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/java/com/itheima/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_01_quickstart/src/main/resources/applicationContext.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="spring_01_quickstart" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="spring_01_quickstart" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
