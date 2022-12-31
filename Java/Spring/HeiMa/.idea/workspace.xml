@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b7618ef-9667-4631-abaa-c5e8bf36456c" name="Changes" comment="">
+    <list default="true" id="2b7618ef-9667-4631-abaa-c5e8bf36456c" name="Changes" comment="spring_03_bean_instance">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_02_base_config/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/AppForName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/AppForScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/AppForInstanceBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/AppForInstanceOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/AppForInstanceUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/impl/OrderDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/factory/UserDaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/factory/UserDaoFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +39,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "last_opened_file_path": "D:/Files/Github/Lerning/Java/Spring/HeiMa/HeiMa.iml",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itheima.App" />
@@ -57,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672447532386</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="spring_03_bean_instance">
+      <created>1672497806674</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672497806674</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -65,7 +119,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -73,7 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring_01_quickstart" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring_01_quickstart" />
+    <MESSAGE value="spring_03_bean_instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring_03_bean_instance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
