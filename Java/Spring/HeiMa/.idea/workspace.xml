@@ -56,10 +56,23 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.com.itheima.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itheima.App" />
       <module name="spring_01_quickstart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.itheima.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.App" />
+      <module name="spring_18_aop_quickstart" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -85,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.itheima.App" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -112,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672498155018</updated>
       <workItem from="1672498156599" duration="204000" />
-      <workItem from="1672498374583" duration="1552000" />
+      <workItem from="1672498374583" duration="3677000" />
     </task>
     <task id="LOCAL-00003" summary="spring_04_bean_lifecycle">
       <created>1672498297422</created>
@@ -142,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672516074632</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="spring_9-end">
+      <created>1672539152386</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672539152386</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +203,8 @@
     <MESSAGE value="spring_03_bean_instance" />
     <MESSAGE value="spring_04_bean_lifecycle" />
     <MESSAGE value="spring_5-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring_5-8" />
+    <MESSAGE value="spring_9-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring_9-end" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -11,6 +11,9 @@
         <option value="$PROJECT_DIR$/spring_06_di_constructor/pom.xml" />
         <option value="$PROJECT_DIR$/spring_07_di_autoware/pom.xml" />
         <option value="$PROJECT_DIR$/spring_08_di_collection/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_09_datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_17_aop_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_18_aop_quickstart/pom.xml" />
       </list>
     </option>
   </component>
