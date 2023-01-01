@@ -7,6 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/spring_02_base_config/spring_02_base_config.iml" filepath="$PROJECT_DIR$/spring_02_base_config/spring_02_base_config.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_03_bean_instance/spring_03_bean_instance.iml" filepath="$PROJECT_DIR$/spring_03_bean_instance/spring_03_bean_instance.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_04_bean_lifecycle/spring_04_bean_lifecycle.iml" filepath="$PROJECT_DIR$/spring_04_bean_lifecycle/spring_04_bean_lifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_05_di_set/spring_05_di_set.iml" filepath="$PROJECT_DIR$/spring_05_di_set/spring_05_di_set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_06_di_constructor/spring_06_di_constructor.iml" filepath="$PROJECT_DIR$/spring_06_di_constructor/spring_06_di_constructor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_07_di_autoware/spring_07_di_autoware.iml" filepath="$PROJECT_DIR$/spring_07_di_autoware/spring_07_di_autoware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_08_di_collection/spring_08_di_collection.iml" filepath="$PROJECT_DIR$/spring_08_di_collection/spring_08_di_collection.iml" />
     </modules>
   </component>
 </project>

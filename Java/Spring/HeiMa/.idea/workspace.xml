@@ -5,28 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b7618ef-9667-4631-abaa-c5e8bf36456c" name="Changes" comment="spring_03_bean_instance">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_02_base_config/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/AppForName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/AppForScope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/java/com/itheima/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_02_base_config/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/AppForInstanceBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/AppForInstanceOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/AppForInstanceUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/impl/OrderDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/factory/UserDaoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/java/com/itheima/factory/UserDaoFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_03_bean_instance/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -68,7 +46,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "9736b2d4608ecb678f833528eab4f9da"
+    "spring.configuration.checksum": "38f01b15f661d1214f4f96819fd7b82a"
   },
   "keyToStringList": {
     "GitStage.ChangesTree.GroupingKeys": [
@@ -134,6 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672498155018</updated>
       <workItem from="1672498156599" duration="204000" />
+      <workItem from="1672498374583" duration="1552000" />
     </task>
     <task id="LOCAL-00003" summary="spring_04_bean_lifecycle">
       <created>1672498297422</created>
@@ -142,7 +121,28 @@
       <option name="project" value="LOCAL" />
       <updated>1672498297422</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="spring_04_bean_lifecycle">
+      <created>1672498406187</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672498406187</updated>
+    </task>
+    <task id="LOCAL-00005" summary="spring_04_bean_lifecycle">
+      <created>1672498495406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672498495406</updated>
+    </task>
+    <task id="LOCAL-00006" summary="spring_5-8">
+      <created>1672516074632</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672516074632</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +181,8 @@
     <MESSAGE value="spring_01_quickstart" />
     <MESSAGE value="spring_03_bean_instance" />
     <MESSAGE value="spring_04_bean_lifecycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring_04_bean_lifecycle" />
+    <MESSAGE value="spring_5-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring_5-8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
