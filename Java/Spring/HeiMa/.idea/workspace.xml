@@ -126,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672498155018</updated>
       <workItem from="1672498156599" duration="204000" />
-      <workItem from="1672498374583" duration="3677000" />
+      <workItem from="1672498374583" duration="4477000" />
     </task>
     <task id="LOCAL-00003" summary="spring_04_bean_lifecycle">
       <created>1672498297422</created>
@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672539152386</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="spring_aop">
+      <created>1672608315110</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672608315110</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +211,8 @@
     <MESSAGE value="spring_04_bean_lifecycle" />
     <MESSAGE value="spring_5-8" />
     <MESSAGE value="spring_9-end" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring_9-end" />
+    <MESSAGE value="spring_aop" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring_aop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
