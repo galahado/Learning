@@ -1,0 +1,49 @@
+Formatting the number: 1234.567
+English (United Kingdom): 1,234.567
+Norwegian (Norway)      : 1 234,567
+Japanese (Japan)        : 1,234.567
+
+Formatting the number 1234.567 (to max 2 dec. places):
+English (United Kingdom): 1,234.57
+Norwegian (Norway)      : 1 234,57
+Japanese (Japan)        : 1,234.57
+
+Formatting the currency amount: 1234.567
+English (United Kingdom): £1,234.57
+Norwegian (Norway)      : kr 1 234,57
+Japanese (Japan)        : ?1,235
+
+Parsing: 1234.567
+English (United Kingdom): 1234.567
+Norwegian (Norway)      : 1234
+Japanese (Japan)        : 1234.567
+
+Parsing: 1234,567
+English (United Kingdom): 1234567
+Norwegian (Norway)      : 1234.567
+Japanese (Japan)        : 1234567
+
+Parsing: 1234@567
+English (United Kingdom): 1234
+Norwegian (Norway)      : 1234
+Japanese (Japan)        : 1234
+
+Parsing: @1234567
+java.text.ParseException: Unparseable number: "@1234567"
+java.text.ParseException: Unparseable number: "@1234567"
+java.text.ParseException: Unparseable number: "@1234567"
+
+Parsing: £1234.567
+English (United Kingdom): 1234.567
+java.text.ParseException: Unparseable number: "£1234.567"
+java.text.ParseException: Unparseable number: "£1234.567"
+
+Parsing: kr 1234,567
+java.text.ParseException: Unparseable number: "kr 1234,567"
+Norwegian (Norway)      : 1234.567
+java.text.ParseException: Unparseable number: "kr 1234,567"
+
+Parsing: ?12@34567
+java.text.ParseException: Unparseable number: "?12@34567"
+java.text.ParseException: Unparseable number: "?12@34567"
+Japanese (Japan)        : 12

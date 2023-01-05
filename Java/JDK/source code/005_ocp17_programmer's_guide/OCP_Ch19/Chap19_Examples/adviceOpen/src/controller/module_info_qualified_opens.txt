@@ -1,0 +1,6 @@
+// Qualified opens directive
+module controller {
+  requires model;
+  requires view;
+  opens com.passion.controller to main;
+}

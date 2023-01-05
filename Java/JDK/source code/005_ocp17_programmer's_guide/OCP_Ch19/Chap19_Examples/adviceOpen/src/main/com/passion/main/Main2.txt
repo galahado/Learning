@@ -1,0 +1,19 @@
+// File path: src/main/com/passion/main/Main.java                           (4)
+package com.passion.main;
+
+import java.lang.reflect.*;
+
+public class Main {
+  public static void main(String... args) {
+    try {
+      Class<?> cObj = Class.forName("com.passion.controller.AdviceController");
+      System.out.println(cObj);
+      Object instance = cObj.getDeclaredConstructor().newInstance();
+      Method method = cObj.getMethod("showAdvice", int.class);
+      System.out.println(method);
+      method.invoke(instance, 1);
+    } catch (Exception e) {
+      System.out.println(e);
+    }
+  }
+} 

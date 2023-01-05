@@ -1,0 +1,12 @@
+Enter: compute()
+Finally: compute()
+Enter: close()
+Now closed
+Finally: close()
+Finally: main()
+java.lang.ArithmeticException: thrown in compute()
+  at Gizmo.compute(Gizmo.java:26)
+  at GizmoTest.main(GizmoTest.java:6)
+  Suppressed: java.lang.IllegalArgumentException: thrown in close()
+    at Gizmo.close(Gizmo.java:14)
+    at GizmoTest.main(GizmoTest.java:7)

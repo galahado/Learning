@@ -1,0 +1,15 @@
+Supplier: Creating an ArrayList
+Accumulator: cont:[], noOfTracks:8, mutCont:[8]
+Supplier: Creating an ArrayList
+Accumulator: cont:[], noOfTracks:6, mutCont:[6]
+Combiner: con1:[8], cont2:[6], mutCont:[8, 6]
+Supplier: Creating an ArrayList
+Accumulator: cont:[], noOfTracks:10, mutCont:[10]
+Supplier: Creating an ArrayList
+Accumulator: cont:[], noOfTracks:8, mutCont:[8]
+Combiner: con1:[10], cont2:[8], mutCont:[10, 8]
+Supplier: Creating an ArrayList
+Accumulator: cont:[], noOfTracks:10, mutCont:[10]
+Combiner: con1:[10, 8], cont2:[10], mutCont:[10, 8, 10]
+Combiner: con1:[8, 6], cont2:[10, 8, 10], mutCont:[8, 6, 10, 8, 10]
+Number of tracks on each CD (parallel): [8, 6, 10, 8, 10]

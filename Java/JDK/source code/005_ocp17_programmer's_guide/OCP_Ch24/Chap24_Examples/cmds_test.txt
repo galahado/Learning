@@ -1,0 +1,7 @@
+cd /Volumes/Local/mySvns/pgj8ocp/trunk/JavaSE17_OCP_Book_2022/OCP_Ch24/Chap24_Examples
+
+javac -cp "./db-derby-10.15.2.0-lib/lib" JDBCTest.java
+
+java -cp "./db-derby-10.15.2.0-lib/lib/*" JDBCTest
+
+java -cp "/Volumes/Local/mySvns/pgj8ocp/trunk/JavaSE17_OCP_Book_2022/OCP_Ch24/Chap24_Examples/db-derby-10.15.2.0-lib/lib/*" JDBCTest

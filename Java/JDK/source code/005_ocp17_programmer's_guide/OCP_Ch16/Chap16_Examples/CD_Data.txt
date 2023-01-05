@@ -1,0 +1,6 @@
+     Artist    Title           No Year Genre
+cd0: Jaav      Java Jive       8  2017 POP
+cd1: Jaav      Java Jam        6  2017 JAZZ
+cd2: Funkies   Lambda Dancing  10 2018 POP
+cd3: Generics  Keep on Erasing 8  2018 JAZZ
+cd4: Generics  Hot Generics    10 2018 JAZZ

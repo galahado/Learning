@@ -1,0 +1,44 @@
+# Commands for the adviceService application.
+
+serviceconsumer              -- service consumer
+serviceprovider              -- service provider
+servicelocator               -- service locator
+serviceinterface             -- service interface
+
+# Change to working directory
+cd /Volumes/Local/mySvns/pgj8ocp/trunk/JavaSE17_OCP_Book_2022/OCP_Ch19/Chap19_Examples/adviceService
+
+# Create the necessary directories
+mkdir -pv src mods mlib
+mkdir -pv src mods mlib mgraph pgraph cgraph
+
+# Compile the modules:
+# Order of individual modules is important because of dependencies:
+javac --module-path mods \
+      -d mods/serviceinterface \
+      src/serviceinterface/module-info.java \
+      src/serviceinterface/org/advice/si/IAdvice.java
+
+javac --module-path mods \
+      -d mods/serviceprovider \
+      src/serviceprovider/module-info.java \
+      src/serviceprovider/org/advice/serviceprovider/CannedAdvice.java \
+            src/serviceprovider/org/advice/serviceprovider/VikingAdvice.java
+
+javac --module-path mods \
+      -d mods/servicelocator \
+      src/servicelocator/module-info.java \
+      src/servicelocator/org/advice/servicelocator/AdviceLocator.java
+
+javac --module-path mods \
+      -d mods/serviceconsumer \
+      src/serviceconsumer/module-info.java \
+      src/serviceconsumer/org/advice/serviceconsumer/AdviceConsumer.java
+
+javac -d mods --module-source-path src --module serviceprovider,serviceconsumer,servicelocator,serviceinterface
+
+javac -d mods --module-source-path src $(find src -name "*.java")
+
+# Launch the application.
+java --module-path mods --module serviceconsumer/org.advice.serviceconsumer.AdviceConsumer
+java -p mods --module serviceconsumer/org.advice.serviceconsumer.AdviceConsumer

@@ -1,0 +1,265 @@
+# Commands for the adviceApp application.
+
+# Change to working directory
+cd /Volumes/Local/mySvns/pgj8ocp/trunk/JavaSE17_OCP_Book_2022/OCP_Ch19/Chap19_Examples/adviceTopDowna
+
+rm -r ./out
+rm -r ./alib
+rm -r ./mlib
+mkdir -pv src out alib
+
+# Create the necessary directories
+
+#____________________________________
+# Create, compile, run automatic modules: 
+
+javac -d out/model $(find src/model -name "*.java")
+jar -cf alib/model.jar -C out/model .
+
+javac -d out/view -p alib --add-modules model $(find src/view -name "*.java")
+jar -cf alib/view.jar -C out/view .
+
+javac -d out/controller -p alib --add-modules model,view $(find src/controller -name "*.java")
+jar -cf alib/controller.jar -C out/controller .
+
+javac -d out/main -p alib --add-modules model,view,controller $(find src/main -name "*.java")
+jar -cfe alib/main.jar com.passion.main.Main -C out/main .
+
+# Run plain code
+java -p alib --module main
+java -p alib --add-modules main,controller,view,model com.passion.main.Main
+java -p alib --module main/com.passion.main.Main
+
+#_____________________________________
+# Order of individual modules is important because of dependencies:
+javac -verbose --module-path mods \
+      -d mods/model \
+      src/model/module-info.java \
+      src/model/com/passion/model/AdviceModel.java
+      
+javac --module-path mods \
+      -d mods/view \
+      src/view/module-info.java \
+      src/view/com/passion/view/AdviceView.java
+
+javac --module-path mods \
+      -d mods/controller \
+      src/controller/module-info.java \
+      src/controller/com/passion/controller/AdviceController.java
+
+javac --module-path mods \
+      -d mods/main \
+      src/main/module-info.java \
+      src/main/com/passion/main/Main.java
+
+javac -d mods --module-source-path src --module model,view
+javac -d mods --module-source-path src --module model,view,controller,main
+javac -d mods --module-source-path src --module main
+
+javac -d mods --module-source-path src $(find src -name "*.java")
+
+# Launch the application.
+java --module-path mods --module main/com.passion.main.Main
+java -p mods --module main/com.passion.main.Main
+
+# Create jars
+jar --verbose \
+    --create \
+    --file alib/model.jar \
+     -C mods/model .
+jar --verbose \
+    --create \
+    --file alib/view.jar \
+     -C mods/view .
+jar --verbose \
+    --create \
+    --file alib/controller.jar \
+     -C mods/controller .
+jar --verbose \
+    --create \
+    --file alib/main.jar \
+    --main-class com.passion.main.Main \
+     -C mods/main .
+
+jar -vcfe alib/main.jar com.passion.main.Main -C mods/main .
+jar -vcf alib/controller.jar -C mods/controller .
+jar -vcf alib/view.jar -C mods/view .
+jar -vcf alib/model.jar -C mods/model .
+
+# Launch from modular jar:
+java --module-path alib --module main
+java -p alib -m main
+java --module-path alib --module main/com.passion.main.Main
+java -p alib:mods -m main
+java -p mods:alib -m main/com.passion.main.Main
+
+# Create runtime image
+jlink --module-path alib --add-modules model,view,controller,main --output advice 
+
+jlink --module-path alib --add-modules model,view,controller,main,java.base --output advice 
+advice/bin/java --list-modules
+advice/bin/java --module main
+advice/bin/java --module main/com.passion.main.Main
+
+# List contents of a JAR
+jar --list --file alib/main.jar
+jar -tf alib/controller.jar 
+jar -tf alib/view.jar 
+jar -tf alib/model.jar
+
+# Extract contents of a JAR
+mkdir main-extracted
+cd main-extracted
+jar --extract --file ../alib/main.jar
+more META-INF/MANIFEST.MF
+
+# Listing available modules:
+java --list-modules
+java --module-path alib --list-modules
+java  -p           alib --list-modules
+
+# Describe modules (examining module descriptor)
+java --module-path alib --describe-module main
+java -p alib -d main
+java --describe-module alib/main
+
+jar --file alib/controller.jar --describe-module
+jar --file alib/model.jar --describe-module
+jar --file alib/view.jar --describe-module
+jar --file alib/main.jar --describe-module
+jar -f alib/main.jar -d
+
+java --describe-module java.sql
+java --describe-module java.se
+java --describe-module java.base
+
+# Viewing dependencies:
+#Only Module deps:
+jdeps --module-path alib --module main -summary
+jdeps --module-path alib --module main -summary -recursive
+jdeps --module-path alib --module main -s -R
+
+jdeps -summary --module-path alib alib/controller.jar
+jdeps -summary -recursive alib/*
+jdeps -summary alib/*
+jdeps -summary alib/model.jar
+#jdeps -summary alib/main.jar
+
+#File + Descriptor + Module deps + Package deps: 
+jdeps --module-path alib --module main
+jdeps --module-path alib --module main -recursive
+jdeps --module-path alib --module main -R
+
+jdeps mods/model 
+jdeps alib/model.jar
+jdeps --module-path alib --module model
+
+#jdeps mods/main 
+#jdeps alib/main.jar
+jdeps --module-path alib --module main 
+
+jdeps --module-path alib alib/controller.jar
+
+jdeps alib/*
+jdeps -recursive alib/*
+jdeps -recursive mods/*
+
+#File + Descriptor + Module deps + Class deps:
+jdeps --module-path alib --module main -verbose
+jdeps --module-path alib --module main -verbose -recursive
+jdeps --module-path alib --module main -v -R
+
+jdeps -verbose alib/*
+jdeps -verbose -recursive alib/* 
+jdeps -verbose alib/model.jar
+jdeps -verbose:package alib/model.jar
+jdeps -verbose:package -recursive alib/* 
+
+#------------------------------------------------------------
+// MG -> Dot file -> pdf
+jdeps -dotoutput . -summary -recursive  alib/*
+dot -Tpdf summary.dot >summary.pdf
+#------------------------------------------------------------
+
+#/jdeps --module-path alib --module main --list-deps 
+#/jdeps --module-path alib --module main --list-reduced-deps 
+#/jdeps --module-path alib --check model,view,controller,main
+#/jdeps --module-path alib --module main -verbose:module  
+#/jdeps --module-path alib --module main -verbose:class 
+
+# Show Module resolution
+java -p alib -d main --show-module-resolution
+java -p alib -d controller --show-module-resolution
+
+#_______________________________________
+# Create dot files for dependencies.
+# Module dependencies
+jdeps -dotoutput mgraph -summary alib/*
+#jdeps -dotoutput mgraph -summary -recursive  alib/*
+
+jdeps -dotoutput mgraph -summary --module-path alib --module main
+jdeps -dotoutput mgraph -summary -recursive --module-path alib --module main
+
+jdeps -dotoutput mgraph -summary --module-path alib alib/main.jar
+jdeps -dotoutput mgraph -summary -recursive --module-path alib alib/main.jar
+
+# Package dependencies
+jdeps -dotoutput pgraph alib/*
+#jdeps -dotoutput pgraph -recursive alib/*
+
+# Class dependencies
+jdeps -dotoutput cgraph -verbose alib/*
+#jdeps -dotoutput cgraph -verbose -recursive alib/*
+
+#_______________________________________
+# Create pdf files of dependencies in respective graph directories
+cd mgraph
+dot -Tpdf main.dot >main.pdf
+dot -Tpdf model.dot >model.pdf
+dot -Tpdf view.dot >view.pdf
+dot -Tpdf controller.dot >controller.pdf
+dot -Tpdf summary.dot >summary.pdf
+cd ..
+
+cd pgraph
+dot -Tpdf main.dot >main.pdf
+dot -Tpdf model.dot >model.pdf
+dot -Tpdf view.dot >view.pdf
+dot -Tpdf controller.dot >controller.pdf
+dot -Tpdf summary.dot >summary.pdf
+cd ..
+
+cd cgraph
+dot -Tpdf main.dot >main.pdf
+dot -Tpdf model.dot >model.pdf
+dot -Tpdf view.dot >view.pdf
+dot -Tpdf controller.dot >controller.pdf
+dot -Tpdf summary.dot >summary.pdf
+cd ..
+#_______________________________________
+
+# Clean up
+find . -type f \( -name "*.class" -or -name "*.jar" -or -name "*.dot" -or -name "*.pdf" -or -name "*.ps" \) -print
+find . -type f \( -name "*.class" -or -name "*.jar" -or -name "*.dot" -or -name "*.pdf" -or -name "*.ps" \) -exec rm -rf {} \;
+rm -r ./mods
+
+# Print exploded module layout 
+tree -F --dirsfirst --noreport .
+tree -F --dirsfirst --noreport -o tree-ouput.txt src 
+tree -F --dirsfirst --noreport src 
+tree -F --dirsfirst --noreport mods
+tree -F --dirsfirst --noreport alib
+tree -F --dirsfirst --noreport src mods alib
+tree -F -d -L 1 --noreport .
+tree -F -d .
+tree -F --dirsfirst --noreport -o tree-ouput.txt . 
+#_________________________________________
+javac -d mods/model $(find src/model -name "*.java")
+jar -cf mlib/model.jar -C mods/model .
+javac -d mods/view -p mlib --add-modules model $(find src/view -name "*.java")
+jar -cf mlib/view.jar -C mods/view .
+javac -d mods/controller -p mlib --add-modules model,view $(find src/controller -name "*.java")
+jar -cf mlib/controller.jar -C mods/controller .
+javac -d mods/main -p mlib --add-modules model,view,controller $(find src/main -name "*.java")
+jar -cfe mlib/main.jar com.passion.main.Main -C mods/main .
+java -p mlib --module main

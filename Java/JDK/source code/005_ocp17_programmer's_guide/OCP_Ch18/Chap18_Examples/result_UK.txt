@@ -1,0 +1,49 @@
+Formatting the number: 9876.598
+English (United Kingdom): 9,876.598
+Norwegian (Norway)      : 9 876,598
+Japanese (Japan)        : 9,876.598
+
+Formatting the number 9876.598 (to 2 dec. places):
+English (United Kingdom): 9,876.6
+Norwegian (Norway)      : 9 876,6
+Japanese (Japan)        : 9,876.6
+
+Formatting the currency amount: 9876.598
+English (United Kingdom): £9,876.60
+Norwegian (Norway)      : kr 9 876,60
+Japanese (Japan)        : ￥9,877
+
+Parsing: 9876.598
+English (United Kingdom): 9,876.6
+Norwegian (Norway)      : 9 876
+Japanese (Japan)        : 9,876.6
+
+Parsing: 9876,598
+English (United Kingdom): 9,876,598
+Norwegian (Norway)      : 9 876,6
+Japanese (Japan)        : 9,876,598
+
+Parsing: 9876@598
+English (United Kingdom): 9,876
+Norwegian (Norway)      : 9 876
+Japanese (Japan)        : 9,876
+
+Parsing: @9876598
+java.text.ParseException: Unparseable number: "@9876598"
+java.text.ParseException: Unparseable number: "@9876598"
+java.text.ParseException: Unparseable number: "@9876598"
+
+Parsing: £9876.598
+English (United Kingdom): £9,876.60
+java.text.ParseException: Unparseable number: "£9876.598"
+java.text.ParseException: Unparseable number: "£9876.598"
+
+Parsing: kr 9876,598
+java.text.ParseException: Unparseable number: "kr 9876,598"
+Norwegian (Norway)      : kr 9 876,60
+java.text.ParseException: Unparseable number: "kr 9876,598"
+
+Parsing: ￥98@76598
+java.text.ParseException: Unparseable number: "￥98@76598"
+java.text.ParseException: Unparseable number: "￥98@76598"
+Japanese (Japan)        : ￥98

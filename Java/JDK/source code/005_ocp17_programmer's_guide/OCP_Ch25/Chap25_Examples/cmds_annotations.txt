@@ -1,0 +1,12 @@
+cd /Volumes/Local/mySvns/pgj8ocp/trunk/JavaSE17_OCP_Book_2022/OCP_Ch25/Chap25_Examples
+
+javac -deprecation DeprecatedCodeUser.java
+javac -Xlint:deprecation DeprecatedCodeUser.java
+javac DeprecatedCodeUser.java
+
+javac -Xlint:unchecked SuppressWarningsTest.java
+javac -Xlint:unchecked ATSuppressWarnings.java
+javac  ATSuppressWarnings.java
+
+javac -Xlint:unchecked ATSafeVarargs.java
+javac ATSafeVarargs.java

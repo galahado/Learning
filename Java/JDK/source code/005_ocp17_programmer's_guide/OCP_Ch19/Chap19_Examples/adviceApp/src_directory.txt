@@ -1,0 +1,25 @@
+src
+├── controller/
+│   ├── com/
+│   │   └── passion/
+│   │       └── controller/
+│   │           └── AdviceController.java
+│   └── module-info.java
+├── main/
+│   ├── com/
+│   │   └── passion/
+│   │       └── main/
+│   │           └── Main.java
+│   └── module-info.java
+├── model/
+│   ├── com/
+│   │   └── passion/
+│   │       └── model/
+│   │           └── AdviceModel.java
+│   └── module-info.java
+└── view/
+    ├── com/
+    │   └── passion/
+    │       └── view/
+    │           └── AdviceView.java
+    └── module-info.java

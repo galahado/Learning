@@ -1,0 +1,16 @@
+Creating a StringBuilder
+accum:, str:na, newAccum:na
+accum:na, str:na, newAccum:nana
+accum:nana, str:na, newAccum:nanana
+accum:nanana, str:na, newAccum:nananana
+accum:nananana, str:na, newAccum:nanananana
+
+Creating a StringBuilder
+comb:nanananana, strb:, newComb:nanananana
+
+Creating a StringBuilder
+comb:, strb:, newComb:
+
+Creating a StringBuilder
+comb:, strb:nanananana, newComb:nanananana
+nanananana

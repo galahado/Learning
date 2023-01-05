@@ -1,0 +1,230 @@
+# Commands for the adviceOpen application.
+
+# Change to working directory
+cd /Volumes/Local/mySvns/pgj8ocp/trunk/JavaSE17_OCP_Book_2022/OCP_Ch19/Chap19_Examples/adviceOpen
+
+# Create the necessary directories
+mkdir src mods mlib
+mkdir -pv src mods mlib mgraph pgraph cgraph
+
+# Print exploded module layout 
+tree -F --dirsfirst --noreport -o tree-ouput.txt src 
+tree -F --dirsfirst --noreport src 
+tree -F --dirsfirst --noreport mods
+tree -F --dirsfirst --noreport mlib
+tree -F --dirsfirst --noreport src mods mlib
+tree -F -d -L 1 --noreport .
+tree -F --dirsfirst --noreport -o tree-ouput.txt . 
+
+# Compile the modules: 
+# Order of individual modules is important because of dependencies:
+javac -verbose --module-path mods \
+      -d mods/model \
+      src/model/module-info.java \
+      src/model/com/passion/model/AdviceModel.java
+      
+javac --module-path mods \
+      -d mods/view \
+      src/view/module-info.java \
+      src/view/com/passion/view/AdviceView.java
+
+javac --module-path mods \
+      -d mods/controller \
+      src/controller/module-info.java \
+      src/controller/com/passion/controller/AdviceController.java
+
+javac --module-path mods \
+      -d mods/main \
+      src/main/module-info.java \
+      src/main/com/passion/main/Main.java
+      
+javac -Xlint:unchecked -d mods --module-source-path src --module model,view
+javac -d mods --module-source-path src --module model,view,controller,main
+javac -d mods --module-source-path src --module main
+
+javac -Xlint:unchecked -d mods --module-source-path src $(find src -name "*.java")
+
+# Launch the application.
+java --add-modules ALL-MODULE-PATH --module-path mods --module main/com.passion.main.Main
+
+java --module-path mods --module main/com.passion.main.Main
+
+java --add-modules controller --module-path mods --module main/com.passion.main.Main
+
+java --show-module-resolution --add-modules controller --module-path mods --module main/com.passion.main.Main
+java --module-path mods --module main/com.passion.main.Main
+java -p mods --module main/com.passion.main.Main
+
+# Create jars
+jar --verbose \
+    --create \
+    --file mlib/model.jar \
+     -C mods/model .
+jar --verbose \
+    --create \
+    --file mlib/view.jar \
+     -C mods/view .
+jar --verbose \
+    --create \
+    --file mlib/controller.jar \
+     -C mods/controller .
+jar --verbose \
+    --create \
+    --file mlib/main.jar \
+    --main-class com.passion.main.Main \
+     -C mods/main .
+
+jar -vcfe mlib/main.jar com.passion.main.Main -C mods/main .
+jar -vcf mlib/controller.jar -C mods/controller .
+jar -vcf mlib/view.jar -C mods/view .
+jar -vcf mlib/model.jar -C mods/model .
+
+# Launch from modular jar:
+
+java --add-modules ALL-MODULE-PATH --module-path mlib --module main
+java --module-path mlib --module main
+java -p mlib -m main
+java --module-path mlib --module main/com.passion.main.Main
+java -p mlib:mods -m main
+java -p mods:mlib -m main/com.passion.main.Main
+
+# List contents of a JAR
+jar --list --file mlib/main.jar
+jar -tf mlib/controller.jar 
+jar -tf mlib/view.jar 
+jar -tf mlib/model.jar
+
+# Extract contents of a JAR
+mkdir main-extracted
+cd main-extracted
+jar --extract --file ../mlib/main.jar
+more META-INF/MANIFEST.MF
+
+# Listing available modules:
+java --list-modules
+java --module-path mlib --list-modules
+java  -p           mlib --list-modules
+
+# Describe modules (examining module descriptor)
+java --module-path mlib --describe-module main
+java -p mlib -d main
+java --describe-module mlib/main
+
+jar --file mlib/controller.jar --describe-module
+jar --file mlib/model.jar --describe-module
+jar --file mlib/view.jar --describe-module
+jar --file mlib/main.jar --describe-module
+jar -f mlib/main.jar -d
+
+java --describe-module java.sql
+java --describe-module java.se
+java --describe-module java.base
+
+# Viewing dependencies:
+#Only Module deps:
+jdeps --module-path mlib --module main -summary
+jdeps --module-path mlib --module main -summary -recursive
+jdeps --module-path mlib --module main -s -R
+
+jdeps -summary --module-path mlib mlib/controller.jar
+jdeps -summary -recursive mlib/*
+jdeps -summary mlib/*
+jdeps -summary mlib/model.jar
+#jdeps -summary mlib/main.jar
+
+#File + Descriptor + Module deps + Package deps: 
+jdeps --module-path mlib --module main
+jdeps --module-path mlib --module main -recursive
+jdeps --module-path mlib --module main -R
+
+jdeps mods/model 
+jdeps mlib/model.jar
+jdeps --module-path mlib --module model
+
+#jdeps mods/main 
+#jdeps mlib/main.jar
+jdeps --module-path mlib --module main 
+
+jdeps --module-path mlib mlib/controller.jar
+
+jdeps mlib/*
+jdeps -recursive mlib/*
+jdeps -recursive mods/*
+
+#File + Descriptor + Module deps + Class deps:
+jdeps --module-path mlib --module main -verbose
+jdeps --module-path mlib --module main -verbose -recursive
+jdeps --module-path mlib --module main -v -R
+
+jdeps -verbose mlib/*
+jdeps -verbose -recursive mlib/* 
+jdeps -verbose mlib/model.jar
+#------------------------------------------------------------
+// MG -> Dot file -> pdf
+jdeps -dotoutput . -summary -recursive  mlib/*
+dot -Tpdf summary.dot >summary.pdf
+#------------------------------------------------------------
+
+#/jdeps --module-path mlib --module main --list-deps 
+#/jdeps --module-path mlib --module main --list-reduced-deps 
+#/jdeps --module-path mlib --check model,view,controller,main
+#/jdeps --module-path mlib --module main -verbose:module  
+#/jdeps --module-path mlib --module main -verbose:class 
+
+# Show Module resolution
+java -p mlib -d main --show-module-resolution
+java -p mlib -d controller --show-module-resolution
+
+#_______________________________________
+# Create dot files for dependencies.
+# Module dependencies
+jdeps -dotoutput mgraph -summary mlib/*
+#jdeps -dotoutput mgraph -summary -recursive  mlib/*
+
+jdeps -dotoutput mgraph -summary --module-path mlib --module main
+jdeps -dotoutput mgraph -summary -recursive --module-path mlib --module main
+
+jdeps -dotoutput mgraph -summary --module-path mlib mlib/main.jar
+jdeps -dotoutput mgraph -summary -recursive --module-path mlib mlib/main.jar
+
+# Package dependencies
+jdeps -dotoutput pgraph mlib/*
+#jdeps -dotoutput pgraph -recursive mlib/*
+
+# Class dependencies
+jdeps -dotoutput cgraph -verbose mlib/*
+#jdeps -dotoutput cgraph -verbose -recursive mlib/*
+
+#_______________________________________
+# Create pdf files of dependencies in respective graph directories
+cd mgraph
+dot -Tpdf main.dot >main.pdf
+dot -Tpdf model.dot >model.pdf
+dot -Tpdf view.dot >view.pdf
+dot -Tpdf controller.dot >controller.pdf
+dot -Tpdf summary.dot >summary.pdf
+cd ..
+
+cd pgraph
+dot -Tpdf main.dot >main.pdf
+dot -Tpdf model.dot >model.pdf
+dot -Tpdf view.dot >view.pdf
+dot -Tpdf controller.dot >controller.pdf
+dot -Tpdf summary.dot >summary.pdf
+cd ..
+
+cd cgraph
+dot -Tpdf main.dot >main.pdf
+dot -Tpdf model.dot >model.pdf
+dot -Tpdf view.dot >view.pdf
+dot -Tpdf controller.dot >controller.pdf
+dot -Tpdf summary.dot >summary.pdf
+cd ..
+#_______________________________________
+
+# Clean up
+find . -type f \( -name "*.class" -or -name "*.jar" -or -name "*.dot" -or -name "*.pdf" -or -name "*.ps" \) -print
+find . -type f \( -name "*.class" -or -name "*.jar" -or -name "*.dot" -or -name "*.pdf" -or -name "*.ps" \) -exec rm -rf {} \;
+rm -r ./mods
+
+  
