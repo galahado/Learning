@@ -8,4 +8,20 @@
         insert into t_user
         values (null, 'admin', '123456', 23, '男', '12345@qq.com')
     </insert>
+
+    <update id="updateUser">
+        update t_user set username='root', password='123' where id=3
+    </update>
+
+    <delete id="deleteUser">
+        delete from t_user where id=4
+    </delete>
+
+    <select id="getUserById" resultType="User">
+        select * from t_user where id=3
+    </select>
+
+    <select id="getAllUsers" resultType="User">
+        select * from t_user
+    </select>
 </mapper>

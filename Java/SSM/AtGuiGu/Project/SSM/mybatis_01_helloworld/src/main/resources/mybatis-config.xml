@@ -3,21 +3,26 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <properties resource="jdbc.properties"/>
+
+    <typeAliases>
+        <package name="com.atguigu.mybatis.pojo"/>
+    </typeAliases>
+
     <!--设置连接数据库的环境-->
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/atguigu_ssm?
-serverTimezone=UTC"/>
-                <property name="username" value="root"/>
-                <property name="password" value="Zcq0323#"/>
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
             </dataSource>
         </environment>
     </environments>
     <!--引入映射文件-->
     <mappers>
-        <mapper resource="mappers/UserMapper.xml" />
+        <package name="com.atguigu.mybatis.mapper"/>
     </mappers>
 </configuration>
