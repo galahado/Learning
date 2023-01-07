@@ -1,4 +1,4 @@
-package com.atguigu.mybatis.mapper;
+package mybatis.mapper;
 
 import com.atguigu.mybatis.pojo.User;
 
@@ -13,8 +13,6 @@ public interface UserMapper {
     void deleteUser();
 
     User getUserById();
-
-    User getUserByUsername(String username);
 
     List<User> getAllUsers();
 }
