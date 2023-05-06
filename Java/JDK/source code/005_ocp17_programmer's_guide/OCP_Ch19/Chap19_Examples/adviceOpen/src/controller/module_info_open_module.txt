@@ -1,5 +1,0 @@
-// Open module
-open module controller {
-  requires model;
-  requires view;
-}
