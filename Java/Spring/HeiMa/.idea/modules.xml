@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring_07_di_autoware/spring_07_di_autoware.iml" filepath="$PROJECT_DIR$/spring_07_di_autoware/spring_07_di_autoware.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_08_di_collection/spring_08_di_collection.iml" filepath="$PROJECT_DIR$/spring_08_di_collection/spring_08_di_collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_09_datasource/spring_09_datasource.iml" filepath="$PROJECT_DIR$/spring_09_datasource/spring_09_datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_15_spring_mybatis/spring_15_spring_mybatis.iml" filepath="$PROJECT_DIR$/spring_15_spring_mybatis/spring_15_spring_mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_17_aop_demo/spring_17_aop_demo.iml" filepath="$PROJECT_DIR$/spring_17_aop_demo/spring_17_aop_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_18_aop_quickstart/spring_18_aop_quickstart.iml" filepath="$PROJECT_DIR$/spring_18_aop_quickstart/spring_18_aop_quickstart.iml" />
     </modules>

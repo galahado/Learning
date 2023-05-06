@@ -42,11 +42,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Files/Github/Lerning/Java/Spring/HeiMa/HeiMa.iml",
+    "last_opened_file_path": "D:/Files/Github/Learning/Java/SpringBoot/HeiMa_SpringBoot",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "38f01b15f661d1214f4f96819fd7b82a"
+    "spring.configuration.checksum": "c08e227b6811182410ac8db4b40ba004"
   },
   "keyToStringList": {
     "GitStage.ChangesTree.GroupingKeys": [
@@ -56,10 +56,23 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.com.itheima.App">
+  <component name="RunManager" selected="Application.com.itheima.App (1)">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itheima.App" />
       <module name="spring_01_quickstart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.itheima.App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.App" />
+      <module name="spring_17_aop_demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.itheima.*" />
@@ -98,6 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.itheima.App (1)" />
         <item itemvalue="Application.com.itheima.App" />
         <item itemvalue="Application.App" />
       </list>
@@ -127,6 +141,7 @@
       <updated>1672498155018</updated>
       <workItem from="1672498156599" duration="204000" />
       <workItem from="1672498374583" duration="4477000" />
+      <workItem from="1673131384063" duration="1101000" />
     </task>
     <task id="LOCAL-00003" summary="spring_04_bean_lifecycle">
       <created>1672498297422</created>
