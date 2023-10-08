@@ -7,26 +7,26 @@ public class CovariantReturnTest {
 
 }
 
-class superClass {
+class SuperClassReturnList {
     List<String> test1() {
         return new ArrayList<>();
     }
 }
 
-class subClass extends superClass {
+class SubClassReturnArrayList extends SuperClassReturnList {
     @Override
     ArrayList<String> test1() {
         return new ArrayList<>();
     }
 }
 
-class superClass2 {
+class SuperClassReturnDouble {
     double test() {
         return 0;
     }
 }
 
-class subClass2 extends superClass2 {
+class subClassReturnInt extends SuperClassReturnDouble {
     // will not work, covariant return only applies to reference type
 //    @Override
 //    int test() {
