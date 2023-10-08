@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 public class FinalParametersTest {
     @Test
     void test() {
+        SuperClassWithFinalAndNonFinalParameters sup = new SuperClassWithFinalAndNonFinalParameters();
+        sup.test(10, "test");
         SubClassCanDetermineWhetherParametersFinal sub = new SubClassCanDetermineWhetherParametersFinal();
         sub.test(10, "test");
     }
