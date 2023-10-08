@@ -35,8 +35,8 @@ class SubClassThrowsNothing extends SuperClassThrowsIOException {
 
 class SubClassThrowsSQLException extends SuperClassThrowsIOException {
     // Will not work, cannot throw any checked exception that is wider
-//    @Override
-//    void test() throws SQLException {
-//        System.out.println("sub class throws SQLException");
-//    }
+    //    @Override
+    //    void test() throws SQLException {
+    //        System.out.println("sub class throws SQLException");
+    //    }
 }

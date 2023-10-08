@@ -35,7 +35,7 @@ class SubClassPublic extends SuperClassDefault {
 
 class SubClassPrivate extends SuperClassDefault {
     // not working, cannot narrow the accessibility
-//    @Override
-//    private void test() {
-//    }
+    //    @Override
+    //    private void test() {
+    //    }
 }
