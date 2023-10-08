@@ -2,7 +2,7 @@ package enums;
 
 import org.junit.jupiter.api.Test;
 
-public class CompareEnum {
+public class CompareEnumTest {
     enum MachineState {BUSY, IDLE, BLOCKED}
 
     @Test
