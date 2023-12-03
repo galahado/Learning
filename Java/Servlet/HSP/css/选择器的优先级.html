@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器的优先级说明</title>
+    <!--
+        老韩解读
+        1. 优先级 行内样式 > id选择器 > class选择器 > 元素选择器
+    -->
+    <style type="text/css">
+        .cls1 {
+            color: green;
+        }
+        div {
+            color: brown;
+        }
+        #id1 {
+            color: yellow;
+        }
+        p {
+            width: 400px;
+            height: 100px;
+            border: solid red;
+            /*border-width 按照 上右下左 顺时针方向指定*/
+            border-width: 20px 2px 8px 8px;
+        }
+    </style>
+</head>
+<body>
+<h1>选择器的优先级说明</h1>
+<div style="color: red" id="id1" class="cls1">韩顺平教育</div>
+<p>p段落</p>
+</body>
+</html>

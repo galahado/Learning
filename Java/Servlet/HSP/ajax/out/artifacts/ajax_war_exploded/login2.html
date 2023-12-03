@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <!--    引入jquery-->
+    <script type="text/javascript" src="./script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //绑定事件
+            $("#btn1").click(function () {
+
+                //发出ajax
+                /**
+                 * 老师解读
+                 * 1. 指定参数时，需要在{}
+                 * 2. 给参数时，前面需要指定参数名
+                 * 3. dataType: "json" 要求服务器返回的数据格式是json
+                 */
+                //     $.ajax({
+                //         url: "/ajax/checkUserServlet2",
+                //         type: "POST",
+                //         data: { //这里我们直接给json, 为啥我要传日期, 为了浏览器缓存
+                //             username: $("#uname").val(),
+                //             date: new Date()
+                //         },
+                //         error: function () { //失败后的回调函数
+                //             console.log("失败~")
+                //         },
+                //         success: function (data, status, xhr) {
+                //             console.log("成功");
+                //             console.log("data=", data);
+                //             console.log("status=", status);
+                //             console.log("xhr=", xhr);
+                //             //data是json对象-> 显示转成json的字符串
+                //             $("#div1").html(JSON.stringify(data));
+                //             //对返回的结果进行处理
+                //             if ("" == data.username) {
+                //                 $("#myres").val("该用户名可用");
+                //             } else {
+                //                 $("#myres").val("该用户名不可用");
+                //             }
+                //         },
+                //         dataType: "json"
+                //     })
+
+
+                //说明
+                //1.$.get() 默认是get请求，不需要指定 请求方式
+                //2.不需要指定参数名
+                //3.填写的实参，是顺序 url, data, success回调函数, 返回的数据格式
+                //讲解.get() 使用
+                // $.get(
+                //     "/ajax/checkUserServlet2",
+                //     {
+                //         username: $("#uname").val(),
+                //         date: new Date()
+                //     },
+                //     function (data, status, xhr) {
+                //         console.log("$.get() 成功");
+                //         console.log("data=", data);
+                //         console.log("status=", status);
+                //         console.log("xhr=", xhr);
+                //         //data是json对象-> 显示转成json的字符串
+                //         $("#div1").html(JSON.stringify(data));
+                //         //对返回的结果进行处理
+                //         if ("" == data.username) {
+                //             $("#myres").val("该用户名可用");
+                //         } else {
+                //             $("#myres").val("该用户名不可用");
+                //         }
+                //     },
+                //     "json"
+                // )
+
+                //老师说明$.post() 和 $.get() 的方式一样
+                //只是这时，是按照post方式发送ajax请求
+                // $.post(
+                //     "/ajax/checkUserServlet2",
+                //     {
+                //         username: $("#uname").val(),
+                //         date: new Date()
+                //     },
+                //     function (data, status, xhr) {
+                //         console.log("$.post() 成功");
+                //         console.log("data=", data);
+                //         console.log("status=", status);
+                //         console.log("xhr=", xhr);
+                //         //data是json对象-> 显示转成json的字符串
+                //         $("#div1").html(JSON.stringify(data));
+                //         //对返回的结果进行处理
+                //         if ("" == data.username) {
+                //             $("#myres").val("该用户名可用");
+                //         } else {
+                //             $("#myres").val("该用户名不可用");
+                //         }
+                //     },
+                //     "json"
+                // )
+
+                //老师说明
+                //1. 如果你通过jquery发出的ajax请求是get 并且 返回的数据格式是json
+                //2. 可以直接使用getJSON() 函数，就很简洁
+                $.getJSON(
+                    "/ajax/checkUserServlet2",
+                    {
+                        username: $("#uname").val(),
+                        date: new Date()
+                    },
+                    function (data, status, xhr) {//成功后的回调函数
+                        console.log("$.getJSON 成功");
+                        console.log("data=", data);
+                        console.log("status=", status);
+                        console.log("xhr=", xhr);
+                        //data是json对象-> 显示转成json的字符串
+                        $("#div1").html(JSON.stringify(data));
+                        //对返回的结果进行处理
+                        if ("" == data.username) {
+                            $("#myres").val("该用户名可用");
+                        } else {
+                            $("#myres").val("该用户名不可用");
+                        }
+                    }
+                )
+            })
+        })
+    </script>
+</head>
+<body>
+<h1>用户注册-Jquery+Ajax</h1>
+<form action="/ajax/checkUserServlet2" method="post">
+    用户名字:<input type="text" name="username" id="uname">
+    <input type="button" id="btn1" value="验证用户名">
+    <input style="border-width: 0;color: red" type="text" id="myres"><br/><br/>
+    用户密码:<input type="password" name="password"><br/><br/>
+    电子邮件:<input type="text" name="email"><br/><br/>
+    <input type="submit" id="submit" value="用户注册">
+</form>
+<h1>返回的json数据</h1>
+<div id="div1"></div>
+</body>
+</html>

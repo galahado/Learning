@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+
+    <!--配置AFilter 和 BFilter-->
+
+    <filter>
+        <filter-name>TopicFilter</filter-name>
+        <filter-class>com.hspedu.filter.TopicFilter</filter-class>
+        <!--配置禁用词-->
+        <init-param>
+            <param-name>forbiddenword</param-name>
+            <param-value>苹果,香蕉</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>TopicFilter</filter-name>
+        <url-pattern>/topic/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>AFilter</filter-name>
+        <filter-class>com.hspedu.filter.AFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>BFilter</filter-name>
+        <filter-class>com.hspedu.filter.BFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>BFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+
+
+
+    <filter>
+        <filter-name>HspFilterConfig</filter-name>
+        <filter-class>com.hspedu.filter.HspFilterConfig</filter-class>
+        <!--这里就是给该filter配置的参数-有程序员根据业务逻辑来设置-->
+        <init-param>
+            <param-name>ip</param-name>
+            <param-value>127.0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>port</param-name>
+            <param-value>8888</param-value>
+        </init-param>
+        <init-param>
+            <param-name>email</param-name>
+            <param-value>hsp@sohu.com</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>HspFilterConfig</filter-name>
+        <url-pattern>/abc/*</url-pattern>
+    </filter-mapping>
+
+    <!--老师解读:filter一般写在其它servlet的前面
+        1. 观察我们发现filter 配置和 servlet 非常相似. filter也是被tomcat管理和维护
+        2. url-pattern 就是当请求的url 和 匹配的时候，就会调用该filter
+        3. /manage/* 第一个 / 解析成 http://ip:port/工程路径
+        4. 完整的路径就是 http://ip:port/工程路径/manage/* 当请求的资源url满足该条件时
+        都会调用filter , /manage/admin.jsp
+    -->
+    <filter>
+        <filter-name>ManageFilter</filter-name>
+        <filter-class>com.hspedu.filter.ManageFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ManageFilter</filter-name>
+        <url-pattern>/manage/*</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>LoginCheckServlet</servlet-name>
+        <servlet-class>com.hspedu.servlet.LoginCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginCheckServlet</servlet-name>
+        <url-pattern>/loginCheckServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

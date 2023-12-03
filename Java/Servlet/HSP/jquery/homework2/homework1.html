@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对多选框进行操作</title>
+    <script type="text/javascript" src="../script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () { //页面加载完毕
+            //1. 绑定事件
+            //2. 选择对象
+            //3. 进行处理
+            $("#b1").click(function () {
+                //思路：选择所有的checkbox -> 过滤 checked
+                var $input = $("input[type='checkbox']:checked");
+                console.log("你选择的个数= " + $input.length);
+
+                //显示名称, 遍历 $input
+                $input.each(function () {
+                    //隐式this
+                    console.log("选择的爱好是= " + $(this).val())
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<h1>对多选框进行操作</h1>
+<input type="checkbox" name="hobby" value="篮球"/>篮球
+<input type="checkbox" name="hobby" value="足球"/>足球
+<input type="checkbox" name="hobby" value="网球"/>网球
+<input type="checkbox" name="hobby" value="排球"/>排球
+<input type="button" id="b1" value="点击测试"/>
+</body>
+</html>

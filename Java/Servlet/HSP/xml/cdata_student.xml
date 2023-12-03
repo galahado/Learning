@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    老韩解读
+    <![CDATA[
+  这里可以把你输入的字符原样显示，不会解析 xml
+    ]]>
+-->
+<students>
+    <stduent id="01">
+        <name>tom</name>
+        <gender>男</gender>
+        <age>18</age>
+        <!--
+            举例说明:
+            下面是一段js的代码片段. 直接放在<code></code>标签间，语法错误
+            使用CDATA节来处理即可.
+             <script data-compress=strip>
+                function h(obj){
+                obj.style.behavior='url(#default#homepage)';
+                var a = obj.setHomePage('//www.baidu.com/');
+                }
+            </script>
+        -->
+    </stduent>
+    <stduent id="02">
+        <name>scott</name>
+        <gender>女</gender>
+        <age>17</age>
+        <code>
+            <!--如果希望把某些字符串,当做普通文本，使用CDATA包括 -->
+            <![CDATA[
+                <script data-compress=strip>
+                function h(obj){
+                obj.style.behavior='url(#default#homepage)';
+                var a = obj.setHomePage('//www.baidu.com/');
+                }
+            </script>
+            ]]>
+
+        </code>
+    </stduent>
+</students>

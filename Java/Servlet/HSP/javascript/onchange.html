@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onchange 内容发生改变事件</title>
+    <script type="text/javascript">
+        function mySal() {
+            alert("工资范围变化了~");
+        }
+
+        //动态注册
+        window.onload = function () {
+            //获取到sel01的dom对象
+            var sel01 = document.getElementById("sel01");
+            //给sel01绑定onchange事件
+            sel01.onchange = function () {
+                alert("你换女友的~");
+            }
+        }
+    </script>
+</head>
+<body>
+你当前工资水平： <!--静态注册 onchange 事件-->
+<select onchange="mySal()">
+    <option>--工资范围--</option>
+    <option>10k以下</option>
+    <option>10k-30k</option>
+    <option>30k以上</option>
+</select> <br/>
+
+你当前女友是谁：
+<select id="sel01"> <!-- 动态绑定 onchange-->
+    <option>---女友---</option>
+    <option>艳红</option>
+    <option>春桃</option>
+    <option>春花</option>
+</select>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数小练习</title>
+    <script type="text/javascript">
+
+        // 要求: 编写 一个函数。用于计算所有参数相加的和并返回, 如果实参不是number, 就过滤掉
+        function sum() {
+            var res = 0;
+            //通过arguments 来获取传入的参数
+            for (var i = 0; i < arguments.length; i++) {
+                //过滤掉不是number的数据
+                if (typeof (arguments[i]) == "number") {
+                    res += arguments[i];
+                }
+            }
+            return res;
+        }
+
+        //测试
+        alert(sum(1, 2, 3, 4, "abc", 10));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

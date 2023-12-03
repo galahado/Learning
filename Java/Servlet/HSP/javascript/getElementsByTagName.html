@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByTagName</title>
+    <script type="text/javascript">
+        function changeImgs() {
+            //1. 得到所有的img
+            var imgs = document.getElementsByTagName("img");
+            //老师说 imgs 是 HTMLCollections
+            alert("猫猫的数量是=" + imgs.length);
+            //2. 修改src,遍历修改
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].src = "./img/" + (i+4) +".png";
+            }
+            //3课后作业->再评讲
+            //思路
+            //(1) input 增加id, 可以修改value
+            //(2) 根据input 的 value值来决定是切换猫还是狗 if -- else if ---
+            //(3) 其它自己先思考
+        }
+    </script>
+</head>
+<body>
+<img src="./img/1.png" height="100">
+<img src="./img/2.png" height="100">
+<img src="./img/3.png" height="100">
+<br/>
+<input type="button" onclick="changeImgs()"
+       value="查看多少小猫,并切换成小狗"/>
+</body>
+</html>

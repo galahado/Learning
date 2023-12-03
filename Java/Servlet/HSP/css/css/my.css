@@ -1,0 +1,8 @@
+div {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+span {
+    border: 2px dashed blue;
+}

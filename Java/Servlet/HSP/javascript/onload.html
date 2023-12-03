@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onload 加载完成事件</title>
+    <script type="text/javascript">
+        //定义了一个函数
+        function sayOK() {
+            alert('静态注册 onload 事件sayOK');
+        }
+
+        //1. 在js中，将页面窗口 映射成 window dom对象
+        //2. window对象有很多的函数和属性，可以使用
+        //3. window.onload 表示页面被加载完毕
+        //4. 后面的 function (){} 表示加载完毕后，要执行的函数/代码
+        //5. 多说一句
+        window.onload = function () {
+            alert("动态注册 onload 事件");
+        }
+    </script>
+</head>
+<!--静态注册-->
+<body>
+hello~
+<input type="text" value="测试"/>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数快速入门</title>
+    <script type="text/javascript">
+        //定义一个简单的函数
+        //老韩解读：如果不调用函数，那么该函数时不会执行
+        //在js中如果要执行函数，有两种方式 1.主动调用hi(); 2. 通过事件去触发该函数
+        function hi() {
+            alert("hi 老韩~");
+        }
+
+    </script>
+</head>
+<body>
+<!--
+    这里表示给button绑定了onclick事件
+    当用户点击了该button，就会触发 hi() 函数
+-->
+<button onclick="hi()">点击这里</button>
+</body>
+</html>

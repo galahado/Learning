@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<h1>用户登录</h1>
+<!--
+请写出 login.html 在不通过Servlet转发情况下, 如何 通过表单提交, 找到 user.html, 把所有的写法列出来
+1. 完整的url  http://localhost:8080/webpath/views/user/user.html
+2. 使用相对路径 action="views/user/user.html" => 使用当前浏览器的 地址栏 ip:port/工程路径/ + ...
+3. action="/webpath/views/user/user.html"
+   浏览器对第一个 / 进行解析 为 http://localhost:8080/ + webpath/views/user/user.html
+   同样是一个完整url
+4. 这里老师提一句： 我们使用服务器渲染技术，可以动态得到 /工程路径 , 后面再说
+-->
+<!--<form action="/webpath/hi" method="post">-->
+    <form action="/webpath/redirect" method="post">
+    u: <input type="text" name="username"><br/>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>

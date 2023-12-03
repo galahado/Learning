@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByName 函数</title>
+    <script type="text/javascript">
+        //完成全选
+        function selectAll() {
+            //1.获取到 sport 这一组复选框
+            var sports = document.getElementsByName("sport");
+            //sports 是什么? 是nodeList 即时一个集合
+            //alert(sports);
+            //2. 拿到[dom ,集合]，操作【属性和方法api】泥瓦匠|工程师 清华
+            //   遍历 sports， 修改
+            for (var i = 0; i < sports.length; i++) {
+                sports[i].checked = true;//选中
+            }
+        }
+        //全不选
+        function selectNone() {
+            //1.获取到 sport 这一组复选框
+            var sports = document.getElementsByName("sport");
+            //sports 是什么? 是nodeList 即时一个集合
+            //alert(sports);
+            //2. 拿到[dom ,集合]，操作【属性和方法api】泥瓦匠|工程师 清华
+            //   遍历 sports， 修改
+            for (var i = 0; i < sports.length; i++) {
+                sports[i].checked = false;//全部不选中
+            }
+        }
+        //反选 selectReverse
+        function selectReverse() {
+            //1.获取到 sport 这一组复选框
+            var sports = document.getElementsByName("sport");
+
+            //2. 拿到[dom ,集合]，操作【属性和方法api】泥瓦匠|工程师 清华
+            //   遍历 sports， 修改
+            for (var i = 0; i < sports.length; i++) {
+                // if(sports[i].checked) {//js true
+                //     sports[i].checked = false;
+                // } else {
+                //     sports[i].checked = true;//选中
+                // }
+                sports[i].checked = !sports[i].checked;
+            }
+        }
+    </script>
+</head>
+<body>
+你会的运动项目：
+<input type="checkbox" name="sport" value="zq" checked="checked">足球
+<input type="checkbox" name="sport" value="tq">台球
+<input type="checkbox" name="sport" value="ppq">乒乓球 <br/><br/>
+<button onclick="selectAll()">全选</button>
+<button onclick="selectNone()">全不选</button>
+<button onclick="selectReverse()">反选</button>
+</body>
+</html>

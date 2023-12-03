@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    老韩解读
+    对于一些单个字符，若想显示其原始样式，也可以使用转义的形式予以处理
+    比如 > < & ' ""
+-->
+<students>
+    <stduent id="01">
+        <name>tom</name>
+        <gender>男</gender>
+        <age>28</age>
+        <!--
+            使用转义字符表示一些特殊字符
+            <resume>年龄<100 &版权</resume>
+        -->
+        <resume>年龄&lt;10 &gt; &amp;</resume>
+    </stduent>
+    <stduent id="02">
+        <name>scott</name>
+        <gender>女</gender>
+        <age>17</age>
+    </stduent>
+</students>

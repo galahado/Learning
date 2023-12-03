@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onclick 单击事件</title>
+    <script type="text/javascript">
+        function sayOK() {
+            alert("你点击了sayOK按钮");
+        }
+
+        //当页面加载完毕后，我们再进行动态绑定
+        //基本概念和机制一定要清楚
+        window.onload = function () {
+            // 动态注册 onclick 事件
+            //1. 先拿到 id=btn01 的 button对应dom对象
+            //2. 通过 dom对象动态的绑定onclick事件
+            //3. 通过document的 getElementById获取对应的dom对象
+            // 挖坑~填坑
+            var btn01 = document.getElementById("btn01");
+            btn01.onclick = function () {
+                alert("你点击了sayHi按钮");
+            }
+        }
+
+    </script>
+</head>
+<body>
+<!--静态注册 onClick 事件-->
+<button onclick="sayOK()">sayOK按钮</button>
+<button id="btn01">sayHi按钮</button>
+</body>
+</html>

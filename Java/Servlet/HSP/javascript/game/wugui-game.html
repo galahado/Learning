@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乌龟游戏</title>
+    <script type="text/javascript">
+
+        //定义公鸡的坐标
+        var cock_top = 200;
+        var cock_left = 200;
+
+        //定义乌龟的高度和宽度
+        var wugui_height = 67;
+        var wugui_width = 94;
+        //定义公鸡的高度和宽度
+        var cock_height = 73;
+        var cock_width = 76;
+
+        //编程思想, 技巧--> 不知道是什么就输出，或者日志，或者debug
+        //编程小技巧: 在不确定情况下，可以输出看看
+        function move(obj) {
+            //alert("val= " + obj.value);
+            // 2.1 拿到wugui dom 对象
+            var wugui = document.getElementById("wugui");
+            // 2.2 获取wugui.style.left 和 wugui.style.top 的值， 通过修改就可以让乌龟动起来
+            var wugui_left = wugui.style.left;
+            var wugui_top = wugui.style.top;
+
+            // alert(wugui_left);
+            // alert(wugui_top);
+            // 分析: wugui_left 和 wugui_top 是 string '100px' -> nubmer 100
+            // 类型转换是靠api
+            wugui_left = parseInt(wugui_left.substring(0, wugui_left.indexOf("p")));
+            wugui_top = parseInt(wugui_top.substring(0, wugui_top.indexOf("p")));
+
+            //alert("wugui_left= " + wugui_left + typeof wugui_left);
+            //根据obj.value 来进行上下左右的处理
+
+            if ("向上走" == obj.value) {
+                wugui_top -= 10;
+                wugui.style.top = wugui_top + "px";
+            } else if ("向下走" == obj.value) {
+                wugui_top += 10;
+                wugui.style.top = wugui_top + "px";
+            } else if ("向左走" == obj.value) {
+                wugui_left -= 10;
+                wugui.style.left = wugui_left + "px";
+            } else if ("向右走" == obj.value) {
+                wugui_left += 10;
+                wugui.style.left = wugui_left + "px";
+            }
+
+            //玩一把，完成碰撞功能
+
+            // 4. 分析如何判断乌龟和公鸡碰撞
+            // 4.1 得到乌龟和公鸡左上角的距离, 纵向距离y
+            // (1) 如果乌龟在上面， 当y < 乌龟图片的高度 时，说明 他们可能在纵向发生重叠， 使用yy 记录
+            // (2) 如果乌龟在下面， 当y < 公鸡图片的高度 时，说明 他们可能在纵向发生重叠， 使用yy 记录
+            //
+            // 4.2 得到乌龟和公鸡左上角的距离, 横向距离x
+            // (1) 如果乌龟在左面， 当x < 乌龟图片的宽度 时，说明 他们可能在横向发生重叠， 使用xx 记录
+            // (2) 如果乌龟在右面， 当x < 公鸡图片的宽度 时，说明 他们可能在横向发生重叠， 使用xx 记录
+            //
+            // 4.3 如果 xx 和 yy 同时为true, 说明一定发生碰撞
+
+            //得到乌龟和公鸡左上角的距离, 纵向距离y
+            var y = Math.abs(wugui_top - cock_top);
+            // 得到乌龟和公鸡左上角的距离, 横向距离x
+            var x = Math.abs(wugui_left - cock_left);
+            var yy = 0;//默认纵向没有重叠
+            var xx = 0;//默认横向没有重叠
+
+            //如果乌龟在上面， 当y < 乌龟图片的高度 时，说明 他们可能在纵向发生重叠， 使用yy 记录
+            //如果乌龟在下面， 当y < 公鸡图片的高度 时，说明 他们可能在纵向发生重叠， 使用yy 记录
+            if (wugui_top < cock_top) {//乌龟在上
+                if (y < wugui_height) {
+                    yy = 1;
+                }
+            } else {//乌龟在下
+                if (y < cock_height) {
+                    yy = 1;
+                }
+            }
+
+
+            //如果乌龟在左面， 当x < 乌龟图片的宽度 时，说明 他们可能在横向发生重叠， 使用xx 记录
+            //如果乌龟在右面， 当x < 公鸡图片的宽度 时，说明 他们可能在横向发生重叠， 使用xx 记录
+            if (wugui_left < cock_left) {//乌龟在左面
+                if (x < wugui_width) {
+                    xx = 1;
+                }
+            } else {//乌龟在右面
+                if (x < cock_width) {
+                    xx = 1;
+                }
+            }
+
+            //如果 xx 和 yy 同时为true, 说明一定发生碰撞
+            if (xx && yy) {
+                alert("乌龟很厉害!");
+                //乌龟放到原来的位置
+                wugui.style.left = "100px";
+                wugui.style.top = "120px";
+            }
+
+        }
+    </script>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td></td>
+        <!--
+            老韩解读
+            1. this表示的是你点击的这个button，而且已经是一个dom对象
+            2. 可以使用属性和方法
+        -->
+        <td><input type="button" value="向上走" onclick="move(this)"/></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="向左走" onclick="move(this)"/></td>
+        <td></td>
+        <td><input type="button" value="向右走" onclick="move(this)"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="向下走" onclick="move(this)"/></td>
+        <td></td>
+    </tr>
+</table>
+<!--把乌龟放在一个div
+    老韩解读
+    1. style 的 position: absolute 表示绝对定位
+    2. left:100px 表示图片距离窗口的原点的横坐标
+    3. top:120px; 表示图片距离窗口的原点的纵坐标
+    4. 针对图片而言，定位的点，是图片的左上角
+-->
+<div id="wugui" style="position: absolute ;left:100px;top:120px;">
+    <img src="1.bmp" border="1" alt=""/>
+</div>
+<!--公鸡图片div-->
+<div id="cock" style="left:200px;position:absolute;top:200px;">
+    <img src="2.bmp" border="1" alt=""/>
+</div>
+</body>
+</html>

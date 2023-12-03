@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单综合案例</title>
+</head>
+<body>
+<!--
+    form 标签就是表单
+    input type=text : 是文件输入框  value 设置默认显示内容
+    input type=password 是密码输入框 value 设置默认显示内容
+    input type=radio 是单选框 name 属性可以对其进行分组
+    checked="checked"表示默认选中input
+
+    type=checkbox 是复选框 checked="checked"表示默认选中
+
+    input type=reset 是重置按钮 value 属性修改按钮上的文本
+    input type=submit 是提交按钮 value 属性修改按钮上的文本
+    input type=button 是按钮 value 属性修改按钮上的文本
+    input type=file 是文件上传域
+    input type=hidden 是隐藏域
+    当我们要发送某些信息，而这些信息，不需要用户参与，就可以使用隐藏域（提交的
+    时候同时发送给服务器）
+
+    select 标签是下拉列表框
+    option 标签是下拉列表框中的选项
+    selected="selected"设置默认选中
+
+    textarea 表示多行文本输入框 （起始标签和结束标签中的内容是默认值）
+    rows 属性设置可以显示几行的高度
+    cols 属性设置每行可以显示几个字符宽度
+
+    老师提醒，一定一定使用form 标签将input元素包起来
+    一定一定要给input元素设置 name属性，否则，数据提交不到服务器
+    注意：checkbox是复选框，如果希望是同一组 保证name属性一致
+    注意：在checkbox  select radio 提交数据的时候是value属性的值
+-->
+<form>
+    用户注册信息<br/>
+    用户名称: <input type="text" name="username"><br/>
+    用户密码: <input type="password" name="pwd1"><br/>
+    确认密码: <input type="password" name="pwd2"><br/>
+    选择你喜欢的运动项目:
+    <input type="checkbox" name="sport" value="lq">篮球<br/>
+    <input type="checkbox" name="sport" value="zq" checked>足球<br/>
+    <input type="checkbox" name="sport" value="sq" checked>手球<br/>
+    请选择性别 :
+    <input type="radio" name="gender" value="male">男<br/>
+    <input type="radio" name="gender" value="female">女<br/>
+    请选择城市:
+    <select name="city">
+        <option>--选择--</option>
+        <option value="cd">成都</option>
+        <option value="bj">北京</option>
+        <option value="sh">上海</option>
+    </select><br/>
+    自我介绍:
+    <textarea rows="6" cols="20"></textarea><br/>
+    选择你的文件(头像)<input type="file" name="myfile"><br/>
+    <input type="submit" value="提交"/> <input type="reset" value="重置"/>
+</form>
+</body>
+</html>

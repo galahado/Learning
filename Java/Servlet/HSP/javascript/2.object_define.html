@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义对象方式2：{} 形式</title>
+    <script type="text/javascript">
+        //演示自定义对象方式2：{} 形式
+        var person = {
+            name: "老韩", //说明多个属性和函数之间，使用,隔开
+            age: 20,
+            hi: function () {
+                console.log("person信息= " + this.name + " " + this.age);
+            },
+            sum: function (n1, n2) {
+                return n1 + n2;
+            }
+        }
+
+        //使用
+        console.log("外部访问 name= " + person.name + " age=" + person.age);
+        person.hi();
+        console.log("sum=" + person.sum(10, 30));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

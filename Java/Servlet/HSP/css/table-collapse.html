@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格细线</title>
+    <style type="text/css">
+        /*
+            设置边框 : border: 1px solid black
+            将边框合并: border-collapse: collapse;
+            指定宽度： width
+            设置边框： 给 td, th 指定即可 border: 1px solid black;
+
+            老韩解读
+            1. table, tr, td 表示组合选择器
+            2. 就是table 和 tr 还有 td ,都用统一的样式指定, 可以提高复用性
+         */
+        table, tr, td {
+            width: 300px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td align=center colspan="3">星期一菜谱</td>
+    </tr>
+
+    <tr>
+        <td rowspan=2>素菜</td>
+        <td>青草茄子</td>
+        <td>花椒扁豆</td>
+    </tr>
+    <tr>
+        <td>小葱豆腐</td>
+        <td>炒白菜</td>
+    </tr>
+    <tr>
+        <td rowspan=2>荤菜</td>
+        <td>油闷大虾</td>
+        <td>海参鱼翅</td>
+    </tr>
+    <tr>
+        <td>红烧肉</td>
+        <td>烤全羊</td>
+    </tr>
+</table>
+
+</body>
+
+</html>

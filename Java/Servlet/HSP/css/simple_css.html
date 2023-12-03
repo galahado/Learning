@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 快速入门</title>
+    <!--
+        老师解读
+        1. 在head标签内，出现了 <style type="text/css"></style>
+        2. 表示要写css内容
+        3. div{} 表示对div元素进行样式的指定, div就是一个选择器(元素/标签选择器)
+        4. width: 300px(属性); 表示对div样式的具体指定, 可以有多个
+        5. 如果有多个，使用; 分开即可, 最后属性可以没有; 但是建议写上
+        6. 当运行页面时，div就会被 div{} 渲染，修饰
+        7. 小经验：在调试css时，可以通过修改颜色，或者大小来看
+        8. css的注释是 /* */ ,快捷键 ctrl+/
+    -->
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<!--先使用传统的方法-->
+<div>hello, 北京</div>
+<br/>
+<div>hello, 上海</div>
+<br/>
+<div>hello, 天津</div>
+<br/>
+<div>hello, 深圳</div>
+<br/>
+</body>
+</html>

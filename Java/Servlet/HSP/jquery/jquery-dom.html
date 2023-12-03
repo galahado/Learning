@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery对象转成dom对象</title>
+<!--    一定要引入jquery-->
+    <script type="text/javascript" src="./script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+
+        window.onload = function (){
+            //得到jquery对象
+            var $username = $("#username");
+            alert("$username value= " + $username.val())
+
+            //准备把jquery对象->dom
+            //老韩说明
+            //(1)jquery是一个数组对象，封装了dom对象
+            //(2)可以通过[index] 来获取，也可以通过get(index)
+            //(3)一般来说 index 是 0
+            //方式1
+            // var username = $username[0];
+            // alert(username)// 输出username 是 object HtmlInputElement
+            // alert("username value=" + username.value);
+
+            //方式2 => 老师提醒，在练习学习过程, 输出的提示信息尽量不同
+            var username = $username.get(0);
+            alert("username value~~~=" + username.value)
+        }
+    </script>
+</head>
+<body>
+用户名 <input type="text" id="username" name="username" value="韩顺平教育"/>
+</body>
+</html>

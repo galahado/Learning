@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onblur 失去焦点事件</title>
+    <script type="text/javascript">
+        //静态绑定
+        function upperCase() {
+            //1. 先得到fname 输入框的value -> 得到对应dom对象
+            var fname = document.getElementById("fname");
+            fname.value = fname.value.toUpperCase();
+        }
+
+        //在页面加载完毕，完成动态绑定
+        window.onload = function () {
+            //1.得到fname2的dom对象
+            var fname2 = document.getElementById("fname2");
+            fname2.onblur = function () {
+                fname2.value = fname2.value.toUpperCase();
+            }
+        }
+
+    </script>
+</head>
+<body>
+输入英文单词：
+<input type="text" id="fname" onblur="upperCase()" /><br />
+输入英文单词：
+<input type="text" id="fname2" />
+</body>
+</html>

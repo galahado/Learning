@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    老韩解读
+    1 xml :表示该文件的类型 xml
+    2 version="1.0"版本
+    3 encoding="UTF-8" 文件编码
+    4. students: root元素/根元素, 程序员自己来定
+    5. <student></student> 表示students一个子元素, 可以有多个
+    6. id就是属性 name, age, gender 是student元素的子元素
+-->
+<students>
+    <student id="100">
+        <name>jack</name>
+        <age>10</age>
+        <gender>男</gender>
+    </student>
+    <student id="200">
+        <name>mary</name>
+        <age>18</age>
+        <gender>女</gender>
+    </student>
+</students>

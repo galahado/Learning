@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json和字符串转换的注意事项和细节</title>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var jsonPerson = {
+                "name": "jack",
+                "age": 20
+            }
+
+            //1. JSON.springify(json对象) 会返回对应string, 并不会影响原来json对象
+            //   可以这样理解 java基础 int n = 10; double n2 = (double)n;
+            var strPerson = JSON.stringify(jsonPerson);
+            console.log("jsonPerson=", jsonPerson);
+
+            //2. JSON.parse(string) 函数会返回对应的json对象, 并不会影响原来string
+
+            var strDog = "{\"name\":\"小黄狗\", \"age\":2}";
+            var jsonDog = JSON.parse(strDog);
+            console.log("strDog=", strDog, " 类型= ", typeof strDog);
+
+            //3. 在定义Json对象时, 可以使用 ' ' 表示字符串
+            //   前面的key 可以不用" " 或者 ' '
+
+            var jsonPerson2 = {
+                name: 'jack',
+                age: 20
+            }
+            console.log("jsonPerson2=", jsonPerson2);
+            //4. 但是在把原生字符串转成 json对象时, 必须使用 "", 否则会报错 比如
+            //   工作时，非常容易错
+            var strdog3 = "{\"name\":\"小黄狗~\", \"age\": 4}";
+            JSON.parse(strdog3);
+
+            //5. JSON.springify(json对象) 返回的字符串, 都是 "" 表示的字符串
+            var strPerson2 = JSON.stringify(jsonPerson2);
+            var parse = JSON.parse(strPerson2);
+            console.log("parse=", parse);
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

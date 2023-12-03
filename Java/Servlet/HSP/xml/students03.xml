@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    老韩解读
+    1.区分大小写，例如，<P>和<p>是两个不同的标记。
+    2.不能以数字开头。
+    3.不能包含空格。
+    4.名称中间不能包含冒号（:）。
+    5.如果标签单词需要间隔，建议使用下划线 比如 <book_title>hello</book_title>
+-->
+<students>
+    <student id="100">
+        <name>jack</name>
+        <age>10</age>
+        <gender>男</gender>
+        <email>jack@sohu.com</email>
+        <Email>jack2@sohu.com</Email>
+        <job>java工程师</job>
+        <book_name>三国</book_name>
+    </student>
+    <student id="200">
+        <name>mary</name>
+        <age>18</age>
+        <gender>女</gender>
+    </student>
+</students>

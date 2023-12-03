@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户页面</title>
+    <!--
+        1. 使用相对路径: <a href="../../login.html">点击返回登录</a>
+        2. 使用相对路径是比较麻烦，即使成功，还需要考虑是直接定位到这个资源还是请求转发到这个资源
+        3. 使用base 标签给一个固定的相对路径
+        4. <base href="/webpath/"> 该标签是浏览器解析 http://localhost:8080/webpath/
+        5. 在 base 得到的url 路径基础上 <a href="login.html">点击返回登录</a> =>
+           http://localhost:8080/webpath/login.html
+        6. 一定要自己 玩一把，再听评讲，才会有融合贯通.
+
+    -->
+    <base href="/webpath/">
+</head>
+<body>
+<h1>用户页面</h1>
+<a href="login.html">点击返回登录</a>
+</body>
+</html>

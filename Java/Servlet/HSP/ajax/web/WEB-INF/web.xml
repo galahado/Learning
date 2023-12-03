@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>CheckUserServlet</servlet-name>
+        <servlet-class>com.hspedu.ajax.servlet.CheckUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CheckUserServlet</servlet-name>
+        <url-pattern>/checkUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckUserServlet2</servlet-name>
+        <servlet-class>com.hspedu.ajax.servlet.CheckUserServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckUserServlet2</servlet-name>
+        <url-pattern>/checkUserServlet2</url-pattern>
+    </servlet-mapping>
+</web-app>

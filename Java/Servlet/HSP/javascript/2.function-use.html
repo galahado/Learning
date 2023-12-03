@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用函数的第二种方式</title>
+    <script type="text/javascript">
+        //可以理解成f1指向了函数
+        var f1 = function () {
+            alert("hi 老韩");
+        }
+        console.log(typeof f1);
+        f1();//调用函数
+
+        //老韩这样玩一把
+        var f3 = f1;
+        f3();
+        var f2 = function (name) {
+            alert("hi " + name);
+        }
+        f2("小米");
+
+        var f4 = function (n1, n2) {
+            return n1 + n2;
+        }
+        alert("res= " + f4(10, 50));
+    </script>
+</head>
+<body>
+</body>
+</html>

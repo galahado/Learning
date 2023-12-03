@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格(跨行跨列)</title>
+</head>
+<body>
+<!--
+    column列
+    合并列 : colspan="列数"
+    合并行 : rowspan="行数"
+    cellspacing : 指定单元格间的空隙大小 :0 表示没有空隙
+    bordercolor: 指定表格边框的演示
+    border: 表格边框
+    width： 表格的宽度
+    老韩思路:
+    1. 先把整个表格的完整的行和列，展示出来5*3
+    2. 在使用合并的技术，来处理
+    3. 如果是16进制的颜色，前面#
+-->
+<table border="1" height="250" bordercolor="#E87EFA" cellspacing="0" width="500">
+    <tr>
+        <!--合并了3列-->
+        <td align="center" colspan="3">第1行第1列</td>
+    </tr>
+    <tr>
+        <!-- 合并行，跨行 row行-->
+        <td rowspan="2">第2行第1列</td>
+        <td>第2行第2列</td>
+        <td>第2行第3列</td>
+    </tr>
+    <tr>
+
+        <td>第3行第2列</td>
+        <td>第3行第3列</td>
+    </tr>
+    <tr>
+        <!--合并行，跨行 row行-->
+        <td rowspan="2">第4行第1列</td>
+        <td>第4行第2列</td>
+        <td>第4行第3列</td>
+    </tr>
+    <tr>
+        <td>第5行第2列<img src="imgs/2.png" width="100"></td>
+        <td>第5行第3列</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义对象</title>
+    <script type="text/javascript">
+        //自定义对象的方式1
+        //person是一个空对象，没有自定义的函数和属性
+        var person = new Object();
+        console.log("person类型=" + typeof(person));//object
+        //增加一个属性name
+        person.name = "韩顺平";
+        //增加一个属性
+        person.age = 20;
+        //增加函数
+        person.say = function () {
+            //这里的this就是person
+            console.log("person的信息 " + this.name + " " + this.age + " " + this.job);
+        }
+
+        //调用
+        //访问属性
+        console.log("name= " + person.name + " " + person.email);
+        //访问方法
+        person.say();
+
+        //小细节, 如果没有定义属性，直接使用，就会出现变量提升， 显示undefined
+        console.log("address= " + person.address);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

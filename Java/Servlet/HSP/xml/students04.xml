@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    老韩解读
+    1.属性值用双引号（"）或单引号（'）分隔（如果属性值中有'，用"分隔；有"，用'分隔）
+    2.一个元素可以有多个属性，它的基本格式为：<元素名 属性名="属性值">
+    3.特定的属性名称在同一个元素标记中只能出现一次
+    4.属性值不能包括& 字符
+-->
+<students>
+    <!--
+        举例:
+        id='01' 也是正确写法
+        如果属性值有" 则使用' 包括属性 比如 id="xxx'yyy"
+        如果属性值有' 则使用" 包括属性 比如 id='xxx"yyy'
+        属性名在同一个元素标记只能出现一次 <stduent id="01" id="03"> 错误的
+        属性值不能包括& 字符 比如： <stduent id="0&1"> 是错误的
+    -->
+    <student id="100">
+        <name>jack</name>
+        <age>10</age>
+        <gender>男</gender>
+    </student>
+    <student id="200">
+        <name>mary</name>
+        <age>18</age>
+        <gender>女</gender>
+    </student>
+</students>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逻辑运算符注意事项和使用细节</title>
+    <script type="text/javascript">
+        // 1. 在 JavaScript 语言中，所有的变量，都可以做为一个 boolean 类型的变量去使用。
+        // 体会：js语法是比较松散.
+        var name = "老韩";
+        var age = 800;
+        n1 = null;
+        if (!n1) {
+            alert("hi~");
+        }
+
+        // 2. 0 、null、 undefined、""(空串), NaN 都认为是 false
+
+        var address; // undefined
+        if (!(100 * "hello")) {
+            alert("ok~~");
+        }
+        // 3. && 且运算，有两种情况 => 老韩解读(即 && 返回值是遵守短路与的机制)
+        var res1 = null && 800;
+        alert("res1=" + res1);
+        // 4. || 或运算, 有两种情况 => 老韩解读(即|| 返回值是遵守短路或的机制)
+        var res2 = "老韩" || 800;
+        alert("res2=" + res2);
+
+        //小练习
+        var res3 = (10 + 1) || (6 < 0);
+        alert("res3=" + res3);//11
+        // 5. && 运算 和 || 运算 有短路现象
+        var n1 = 1;
+        var n2 = 3;
+        var res4 = (n1++ > 100) || n2++;
+        alert("n1=" + n1 + " n2=" + n2);
+    </script>
+</head>
+<body>
+</body>
+</html>

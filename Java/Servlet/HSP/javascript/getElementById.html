@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById的使用</title>
+    <!--
+        1. 先得到 h1 的 dom对象, 通过 id 获取
+        2. 对h1对应的dom对象操作即可
+    -->
+    <script type="text/javascript">
+        // function getValue() {//定义函数
+        //     //myHeader 就是dom对象
+        //     var myHeader = document.getElementById("myHeader");
+        //     //alert(myHeader);//HTMLHeadingElement
+        //     //老韩解读 myHeader.innerText 获取到 myHeader的包含的文本
+        //     //看看 innerText , innerHTML
+        //     alert(myHeader.innerText);//文本 韩顺平教育
+        //     alert(myHeader.innerHTML);//html <div>韩顺平教育</div>
+        // }
+
+        //动态绑定,讲过老师，前面老师讲的 js事件章节
+        //为了让小伙伴，听得明白一点，快速演示->回去看js事件
+        window.onload = function () {
+            //1. 获取 myHeader的dom对象
+            var myHeader = document.getElementById("myHeader");
+            //2. 给myHeader绑定 onclick的事件
+            myHeader.onclick = function () {
+                alert("动态绑定 内容是= " + myHeader.innerText);
+            }
+        }
+        //理解了基本原理，其它的问题就是API层级
+
+    </script>
+</head>
+<body>
+<!-- 静态绑定一个点击事件 -->
+<h1 id="myHeader"><div>韩顺平教育</div></h1>
+<p>Click on the header to alert its value</p>
+</body>
+</html>

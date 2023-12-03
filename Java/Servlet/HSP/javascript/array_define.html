@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组定义</title>
+    <script type="text/javascript">
+        //"Audi", "BMW", "Volvo";
+        //数组定义方式1
+        var cars1 = ["Audi", "BMW", "Volvo"];
+        console.log("cars1=" + cars1);
+        console.log(cars1[1]);//表示访问 cars1 数组的第2个元素, 1表示下标/索引，从0开始编号
+
+        //数组定义方式2
+        var cars2 = [];//空数组
+        //添加元素
+        cars2[0] = "奥迪";
+        cars2[1] = "宝马";
+        cars2[2] = "奔驰";
+        console.log("cars2=" + cars2);
+        console.log("cars2[2]=" + cars2[2]);//奔驰
+        console.log("cars2[10]=" + cars2[10]);//如果该元素不存在，返回的就是undefined
+
+        //数组定义方式3
+        var cars3 = new Array("Audi", "BMW", "Volvo");
+        console.log("cars3=" + cars3);
+        console.log("cars3[0]=" + cars3[0]);//Audi
+
+        //数组定义方式4
+        var cars4 = new Array();//空数组
+        console.log(typeof cars4);
+        cars4[0] = "法拉利";
+        cars4[1] = "保时捷";
+        cars4[2] = "yy";//相当于是给数组扩容
+        cars4[0] = "zz";//替换
+
+        cars4[8] = "红旗";//扩容, 如果是跳过了下标给赋值，那么中间没有赋值的元素为undefined
+        console.log("cars4[3]=" + cars4[3]);//undefined
+        console.log("cars4= " + cars4);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

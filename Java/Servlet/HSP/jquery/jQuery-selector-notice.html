@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery选择器使用特点</title>
+    <script type="text/javascript" src="./script/jquery-3.6.0.min.js"></script>
+    <script>
+        window.onload = function () {
+            //如果是dom对象, 获取value
+            var username = document.getElementById("username");
+            // alert(username.value);//这里会发生? => 有错误
+
+            //如果我们希望dom对象可以处理null
+            if(username) {
+                alert("username value=" + username.value)
+            } else {
+                alert("没有获取到对应id的dom对象")
+            }
+
+            //如果是jquery对象, 获取的value
+            //如果没有获取到，调用val() , 并不会报错, 对程序的健壮性.
+            var $username = $("#username");
+            alert($username.val())// 这里不会报错， 提示undefined
+
+        }
+    </script>
+</head>
+<body>
+用户名 <input type="text" id="username~" name="username" value="韩顺平教育"/>
+</body>
+</html>

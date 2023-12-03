@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <script type="text/javascript">
+        window.onload = function () { //页面加载后执行function
+            var checkButton = document.getElementById("checkButton");
+            //给checkButton绑定onclick
+            checkButton.onclick = function () {
+
+                //1. 创建XMLHttpRequest对象(!!!) [ajax引擎对象]
+                var xhr = new XMLHttpRequest();
+                //   获取用户填写的用户名
+                var uname = document.getElementById("uname").value;
+
+                //2. 准备发送指定数据 open, send
+                //老韩解读
+                //(1)"GET" 请求方式可以 GET/POST
+                //(2)"/ajax/checkUserServlet?username=" + uname 就是 url
+                //(3)true , 表示异步发送
+                xhr.open("GET", "/ajax/checkUserServlet?uname=" + uname, true);
+
+                //老师说明，在send函数调用前，给XMLHttpRequest 绑定一个事件onreadystatechange
+                //该事件表示，可以去指定一个函数，当数据变化，会触发onreadystatechange
+                // 每当 xhr对象readyState 改变时，就会触发 onreadystatechange 事件
+                xhr.onreadystatechange = function () {
+                    //如果请求已完成，且响应已就绪, 并且状态码是200
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        //把返回的jon数据,显示在div
+                        document.getElementById("div1").innerHTML = xhr.responseText;
+
+
+                        //console.log("xhr=", xhr)
+                        var responseText = xhr.responseText;
+                        //console.log("返回的信息=" + responseText);
+                        if (responseText != "") {
+                            document.getElementById("myres").value = "用户名不可用"
+                        } else {
+                            document.getElementById("myres").value = "用户名可用"
+                        }
+                    }
+                }
+
+                //3. 真正的发送ajax请求[http请求]
+                // 老韩再说明如果你POST 请求，再send("发送的数据")
+                xhr.send();
+
+
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>用户注册~</h1>
+<form action="/ajax/checkUserServlet" method="post">
+    用户名字:<input type="text" name="username" id="uname">
+    <input type="button" id="checkButton" value="验证用户名">
+    <input style="border-width: 0;color: red" type="text" id="myres"><br/><br/>
+    用户密码:<input type="password" name="password"><br/><br/>
+    电子邮件:<input type="text" name="email"><br/><br/>
+    <input type="submit" value="用户注册">
+</form>
+<h1>返回的json数据</h1>
+<div id="div1"></div>
+</body>
+</html>

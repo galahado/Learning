@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onsubmit 表单提交事件</title>
+    <script type="text/javascript">
+        //动态绑定表单提交
+        window.onload = function () {
+            //1. 得到form2的dom对象
+            var form2 = document.getElementById("form2");
+
+            //2. 绑定onsubmit事件
+            form2.onsubmit = function () {
+                //3. 获取username输出
+                //老韩的过关斩将, 一个一个的条件验证，通过就继续，不通过就return false
+                //考虑正常情况，返回取反!!, 编程思想，写代码的思路
+                if(!(form2.username.value.length >= 4 && form2.username.value.length <= 6)) {
+                    alert("用户名长度(4-6) 不满足");
+                    return false;
+                }
+
+                //4. 处理密码合理性, 灵活
+                if(form2.pwd.value.length != 6) {
+                    alert("密码长度(6) 不满足");
+                    return false;
+                }
+
+                //5. 判断两次密码相等
+                if(form2.pwd.value != form2.pwd2.value) {
+                    alert("你输入的两次密码不等");
+                    return false;
+                }
+
+
+                //6 电子邮件..=> 需要使用正则表达式技术[在java基础中，老韩讲过 877讲]
+                //主要给大家说如何使用正则表达式
+                //String regStr = "^[\\w-]+@([a-zA-Z]+\\.)+[a-zA-Z]+$";
+                //老韩解读
+                //1. 在java中，转义符是\\, 在js中使用正则表达式 \
+                //2. emailPattern.test("xxx"), 验证"xxx"是不是满足emailPattern规则
+                //   如果满足返回true, 否则返回false
+                var emailPattern = /^[\w-]+@([a-zA-Z]+\.)+[a-zA-Z]+$/;
+                if(!emailPattern.test(form2.email.value)) {
+                    alert("电子邮件格式不正确");
+                    return false;
+                }
+
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>注册用户</h1> <!-- 动态注册表单提交事件 -->
+<form action="ok.html" id="form2">
+    用户名: <input type="text" name="username"/>长度(4-6)<br/>
+    密　码: <input type="password" name="pwd"/>长度(6)<br/>
+    确　认: <input type="password" name="pwd2">长度(6)<br/>
+    电　邮: <input type="text" name="email">满足基本格式<br/>
+    <input type="submit" value="注册用户"/></form>
+</body>
+</html>
