@@ -17,7 +17,7 @@ public class TCPFileUploadClient {
         Socket socket = new Socket(InetAddress.getLocalHost(), 8888);
         //创建读取磁盘文件的输入流
         //String filePath = "e:\\qie.png";
-        String filePath = "e:\\abc.mp4";
+        String filePath = "C:\\Users\\zhang\\Downloads\\qie.jpg";
         BufferedInputStream bis  = new BufferedInputStream(new FileInputStream(filePath));
 
         //bytes 就是filePath对应的字节数组
