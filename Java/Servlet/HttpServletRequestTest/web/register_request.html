@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<h1>注册用户</h1>
+<form action="http://localhost:8080/request/methods"
+      method="post">
+    <label>u: <input type="text" name="username"/></label>
+    <br><br>
+    <label>p: <input type="password" name="pwd"/></label>
+    <br><br>
+    选择你喜欢的老师:
+    <label>
+        <input type="checkbox" name="hobby" value="hsp">韩顺平
+    </label>
+    <label>
+        <input type="checkbox" name="hobby" value="lh">老韩
+    </label>
+    <label>
+        <input type="checkbox" name="hobby" value="spls">顺平老师
+    </label>
+    <br/><br/>
+    <input type="submit" value="注册用户"/>
+</form>
+</body>
+</html>
