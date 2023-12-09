@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+// refer: Courses\HSP\02-Java_Web\servlet\src\com\hspedu\servlet\request\HttpServletRequestMethods.java
 public class HttpServletRequestMethods extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
