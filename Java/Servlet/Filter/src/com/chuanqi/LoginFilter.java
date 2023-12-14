@@ -16,12 +16,7 @@ public class LoginFilter implements Filter {
         System.out.println("Login Filtered called!");
         // implement the filter, so that the page can only be shown when there is a "username" attribute in session object
         // otherwise, forward the page to /
-        HttpSession session = ((HttpServletRequest) servletRequest).getSession();
-        if (session.getAttribute("username") != null) {
-            filterChain.doFilter(servletRequest, servletResponse);
-        } else {
-            servletRequest.getRequestDispatcher("/").forward(servletRequest, servletResponse);
-        }
+
     }
 
     @Override
