@@ -1,0 +1,13 @@
+Section 8, Virtual Private Cloud (VPC) Networking, Demo: Provisioning a VPC - Part 1, CIDR.xyz, https://cidr.xyz/
+
+Section 8, Virtual Private Cloud (VPC) Networking, Demo: Provisioning a VPC - Part 1, Subnets for your VPC, https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html
+
+Section 8, Virtual Private Cloud (VPC) Networking, Using NAT Gateways for Internet Access, NAT gateways, https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
+
+Section 8, Virtual Private Cloud (VPC) Networking, Controlling Subnet Traffic with Network ACLs, Ephemeral Ports, https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html#nacl-ephemeral-ports
+
+Section 8, Virtual Private Cloud (VPC) Networking, Controlling Subnet Traffic with Network ACLs, More on Ephemeral Ports, https://en.wikipedia.org/wiki/Ephemeral_port
+
+Section 8, Virtual Private Cloud (VPC) Networking, Building Solutions across VPCs with Peering, Update your route tables for a VPC peering connection, https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-routing.html
+
+Section 8, Virtual Private Cloud (VPC) Networking, Network Privacy with AWS PrivateLink, VPC peering basics, https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html

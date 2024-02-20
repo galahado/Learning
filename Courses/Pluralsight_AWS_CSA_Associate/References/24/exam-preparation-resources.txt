@@ -1,0 +1,3 @@
+Section 25, Exam Preparation, Revision for Success, AWS Architecture Center, https://aws.amazon.com/architecture/
+
+Section 25, Exam Preparation, Preparing for Remote Proctored Exams, Pearson Vue System Test, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1624903043554-s21l04_link.txt

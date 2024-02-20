@@ -1,0 +1,31 @@
+Section 12, High Availability and Scaling, What Are Launch Templates and Launch Configurations?, Launch template user data script, https://github.com/pluralsight-cloud/aws-certified-solutions-architect-associate/blob/main/12-ha-and-scaling/what-are-launch-template-launch-configurations/user_data.sh
+
+Section 12, High Availability and Scaling, What Are Launch Templates and Launch Configurations?, Launch templates, https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html
+
+Section 12, High Availability and Scaling, Scaling EC2 Instances with Auto Scaling, Amazon EC2 Auto Scaling FAQs, https://aws.amazon.com/ec2/autoscaling/faqs/
+
+Section 12, High Availability and Scaling, Scaling EC2 Instances with Auto Scaling, Dynamic scaling for Amazon EC2 Auto Scaling, https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html
+
+Section 12, High Availability and Scaling, Scaling EC2 Instances with Auto Scaling, On-Demand Instance limits, https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#ec2-on-demand-instances-limits
+
+Section 12, High Availability and Scaling, Diving Deeper into Auto Scaling Policies, Manual scaling for Amazon EC2 Auto Scaling, https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-manual-scaling.html
+
+Section 12, High Availability and Scaling, Diving Deeper into Auto Scaling Policies, Predictive scaling for Amazon EC2 Auto Scaling, https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-predictive-scaling.html
+
+Section 12, High Availability and Scaling, Diving Deeper into Auto Scaling Policies, Set default values for instance warmup or scaling cooldown, https://docs.aws.amazon.com/autoscaling/ec2/userguide/set-default-values-for-instance-warmup-or-scaling-cooldown.html
+
+Section 12, High Availability and Scaling, Diving Deeper into Auto Scaling Policies, Step and simple scaling policies for Amazon EC2 Auto Scaling, https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html
+
+Section 12, High Availability and Scaling, Diving Deeper into Auto Scaling Policies, Target tracking scaling policies for Amazon EC2 Auto Scaling, https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html
+
+Section 12, High Availability and Scaling, Demo: Diving Deeper into Auto Scaling Policies, GitHub, https://github.com/pluralsight-cloud/aws-certified-solutions-architect-associate/blob/main/12-ha-and-scaling/diving-deeper-into-autoscaling-policies/stress_commands.txt
+
+Section 12, High Availability and Scaling, Scaling Relational Databases, Amazon RDS Read Replicas [with Aurora], https://aws.amazon.com/rds/features/read-replicas/
+
+Section 12, High Availability and Scaling, Scaling Relational Databases, Replication with Amazon Aurora, https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replication.html
+
+Section 12, High Availability and Scaling, Scaling Relational Databases, Using Aurora Serverless v2, https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html
+
+Section 12, High Availability and Scaling, Scaling Relational Databases, Working with DB instance read replicas, https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html
+
+Section 12, High Availability and Scaling, High Availability and Scaling Exam Tips, Disaster recovery options in the cloud, https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html

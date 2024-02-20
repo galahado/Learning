@@ -1,0 +1,9 @@
+Section 7, Databases, Increasing Read Performance with Read Replicas, Amazon RDS FAQs > Read Replicas, https://aws.amazon.com/rds/faqs/#Read_Replicas
+
+Section 7, Databases, Increasing Read Performance with Read Replicas, Read replicas, Multi-AZ deployments, and multi-region deployments, https://aws.amazon.com/rds/features/read-replicas/#Read_replicas.2C_Multi-AZ_deployments.2C_and_multi-region_deployments
+
+Section 7, Databases, DynamoDB Overview, Amazon DynamoDB announces the new Amazon DynamoDB Standard-Infrequent Access table class, which helps you reduce your DynamoDB costs by up to 60 percent, https://aws.amazon.com/about-aws/whats-new/2021/12/amazon-dynamodb-standard-infrequent-access-table-class/
+
+Section 7, Databases, DynamoDB Overview, Amazon DynamoDB FAQs, https://aws.amazon.com/dynamodb/faqs/
+
+Section 7, Databases, When Do We Use DynamoDB Transactions?, Amazon DynamoDB Transactions: How it works, https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-apis.html

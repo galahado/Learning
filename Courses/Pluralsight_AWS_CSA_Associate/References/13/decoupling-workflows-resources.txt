@@ -1,0 +1,43 @@
+Section 13, Decoupling Workflows, Messaging with SQS, Announcing server-side encryption with Amazon Simple Queue Service -managed encryption keys (SSE-SQS) by default, https://aws.amazon.com/blogs/compute/announcing-server-side-encryption-with-amazon-simple-queue-service-managed-encryption-keys-sse-sqs-by-default/
+
+Section 13, Decoupling Workflows, Sidelining Messages with Dead-Letter Queues, How do dead-letter queues work?, https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html#sqs-dead-letter-queues-how-they-work
+
+Section 13, Decoupling Workflows, Sidelining Messages with Dead-Letter Queues, lambda_function.py, https://github.com/pluralsight-cloud/aws-certified-solutions-architect-associate/blob/main/13-decoupling-workflows/sidelining-messages-with-dead-letter-queues/lambda_function.py
+
+Section 13, Decoupling Workflows, Sidelining Messages with Dead-Letter Queues, What is a Dead-Letter Queue (DLQ)?, https://aws.amazon.com/what-is/dead-letter-queue/
+
+Section 13, Decoupling Workflows, Ordered Messages with SQS FIFO, Amazon SQS FIFO (First-In-First-Out) queues, https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html
+
+Section 13, Decoupling Workflows, Ordered Messages with SQS FIFO, Exactly-once processing, https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-exactly-once-processing.html
+
+Section 13, Decoupling Workflows, Ordered Messages with SQS FIFO, FIFO delivery logic, https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-understanding-logic.html
+
+Section 13, Decoupling Workflows, Ordered Messages with SQS FIFO, High throughput for FIFO queues, https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/high-throughput-fifo.html
+
+Section 13, Decoupling Workflows, Ordered Messages with SQS FIFO, Message ordering, https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-message-order.html
+
+Section 13, Decoupling Workflows, Delivering Messages with SNS, Amazon SNS FAQs, https://aws.amazon.com/sns/faqs/
+
+Section 13, Decoupling Workflows, Delivering Messages with SNS, Amazon SNS message delivery retries, https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.html
+
+Section 13, Decoupling Workflows, Fronting Applications with API Gateway, GitHub Link, https://github.com/pluralsight-cloud/aws-certified-solutions-architect-associate/tree/main/13-decoupling-workflows/fronting-applications-with-api-gateway
+
+Section 13, Decoupling Workflows, Fronting Applications with API Gateway, What is Amazon API Gateway?, https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html
+
+Section 13, Decoupling Workflows, Fronting Applications with API Gateway, Working with HTTP APIs, https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html
+
+Section 13, Decoupling Workflows, Fronting Applications with API Gateway, Working with REST APIs, https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html
+
+Section 13, Decoupling Workflows, Fronting Applications with API Gateway, Working with WebSocket APIs, https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api.html
+
+Section 13, Decoupling Workflows, Executing Batch Workloads Using AWS Batch, AWS Batch FAQs, https://aws.amazon.com/batch/faqs/
+
+Section 13, Decoupling Workflows, Executing Batch Workloads Using AWS Batch, When to use Fargate, https://docs.aws.amazon.com/batch/latest/userguide/fargate.html#when-to-use-fargate
+
+Section 13, Decoupling Workflows, Brokering Messages with Amazon MQ, ActiveMQ Industry-standard APIs and Protocols, https://aws.amazon.com/amazon-mq/features/#Industry-standard_APIs_and_Protocols
+
+Section 13, Decoupling Workflows, Brokering Messages with Amazon MQ, Amazon MQ FAQs, https://aws.amazon.com/amazon-mq/faqs/
+
+Section 13, Decoupling Workflows, Brokering Messages with Amazon MQ, Amazon MQ Features, https://aws.amazon.com/amazon-mq/features/
+
+Section 13, Decoupling Workflows, Decoupling Workflows Exam Tips, Asynchronous messaging and event passing, https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/asynchronous-messaging-and-event-passing.html

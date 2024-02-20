@@ -1,0 +1,19 @@
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), EBS Overview, Amazon EBS FAQs, https://aws.amazon.com/ebs/faqs/
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), EBS Overview, Attach a volume to multiple instances with Amazon EBS Multi-Attach, https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes-multi.html
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), Protecting EBS Volumes with Encryption, Amazon EBS encryption, https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), Protecting EBS Volumes with Encryption, How do I unencrypt an encrypted EBS volume?, https://aws.amazon.com/premiumsupport/knowledge-center/create-unencrypted-volume-cmk/
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), FSx Overview, Amazon EFS FAQs, https://aws.amazon.com/efs/faq/
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), FSx Overview, Amazon FSx for Lustre FAQs, https://aws.amazon.com/fsx/lustre/faqs/
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), FSx Overview, Amazon FSx for Windows File Server FAQs, https://aws.amazon.com/fsx/windows/faqs/
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), FSx Overview, Amazon FSx, https://aws.amazon.com/fsx/
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), Amazon Machine Images: EBS vs. Instance Store, Prebaking vs. Bootstrapping AMIs, https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/prebaking-vs.-bootstrapping-amis.html
+
+Section 6, Elastic Block Storage (EBS) and Elastic File System (EFS), Amazon Machine Images: EBS vs. Instance Store, What's the difference between an instance store and an EBS volume?, https://aws.amazon.com/premiumsupport/knowledge-center/instance-store-vs-ebs/

@@ -1,0 +1,29 @@
+Section 14, Big Data, Exploring Large Redshift Databases, Amazon Redshift FAQs, https://aws.amazon.com/redshift/faqs/
+
+Section 14, Big Data, Exploring Large Redshift Databases, Querying your data lake, https://docs.aws.amazon.com/redshift/latest/gsg/data-lake.html
+
+Section 14, Big Data, Processing Data with EMR (Elastic MapReduce), Overview of Amazon EMR architecture - Cluster resource management, https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-overview-arch.html#emr-arch-resource-management
+
+Section 14, Big Data, Processing Data with EMR (Elastic MapReduce), Overview of Amazon EMR architecture - Data processing frameworks, https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-overview-arch.html#emr-arch-processing-frameworks
+
+Section 14, Big Data, Processing Data with EMR (Elastic MapReduce), Overview of Amazon EMR architecture - Storage, https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-overview-arch.html#emr-arch-storage
+
+Section 14, Big Data, Processing Data with EMR (Elastic MapReduce), What is Amazon EMR?, https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html
+
+Section 14, Big Data, Visualizing Data with QuickSight, Overview, https://aws.amazon.com/quicksight/
+
+Section 14, Big Data, Visualizing Data with QuickSight, Workshops, https://catalog.workshops.aws/quicksight/en-US
+
+Section 14, Big Data, Analyzing Data with Amazon OpenSearch Service, Update: Amazon Elasticsearch Service has been renamed to Amazon OpenSearch Service, https://aws.amazon.com/blogs/opensource/introducing-opensearch/
+
+Section 14, Big Data, Big Data Exam Tips, Amazon EMR FAQs, https://aws.amazon.com/emr/faqs/
+
+Section 14, Big Data, Big Data Exam Tips, Amazon Kinesis, https://aws.amazon.com/kinesis/
+
+Section 14, Big Data, Big Data Exam Tips, Amazon OpenSearch (Elasticsearch) Service FAQs, https://aws.amazon.com/opensearch-service/faqs/
+
+Section 14, Big Data, Big Data Exam Tips, Amazon QuickSight FAQs, https://aws.amazon.com/quicksight/resources/faqs/
+
+Section 14, Big Data, Big Data Exam Tips, Amazon Redshift FAQs, https://aws.amazon.com/redshift/faqs/
+
+Section 14, Big Data, Big Data Exam Tips, AWS Glue, https://aws.amazon.com/glue

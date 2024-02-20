@@ -1,0 +1,11 @@
+Section 17, Automation, CloudFormation, AWS CloudFormation Sample Templates - GitHub, https://github.com/awslabs/aws-cloudformation-templates
+
+Section 17, Automation, CloudFormation, CloudFormation Template, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1624902936193-1043%20-%20S17-L02%20CloudFormation.txt
+
+Section 17, Automation, CloudFormation, What is AWS CloudFormation?, https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
+
+Section 17, Automation, Elastic Beanstalk, Elastic Beanstalk - Demo Instructions, https://raw.githubusercontent.com/ACloudGuru-Resources/Course-Certified-Solutions-Architect-Associate/master/demos/Elastic%20Beanstalk.txt
+
+Section 17, Automation, Systems Manager, AWS Systems Manager Documentation, https://docs.aws.amazon.com/systems-manager/index.html
+
+Section 17, Automation, Systems Manager, GitHub, https://github.com/pluralsight-cloud/aws-certified-solutions-architect-associate/tree/main/17-automation/systems-manager

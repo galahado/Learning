@@ -1,0 +1,59 @@
+Section 19, Governance, Managing Accounts with Organizations, Best practices for multi-account management, https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices.html
+
+Section 19, Governance, Managing Accounts with Organizations, Consolidated billing for AWS Organizations, https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html
+
+Section 19, Governance, Managing Accounts with Organizations, Managing organizational units, https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html
+
+Section 19, Governance, Managing Accounts with Organizations, Managing policies in AWS Organizations, https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies.html
+
+Section 19, Governance, Managing Accounts with Organizations, What is AWS Organizations?, https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html
+
+Section 19, Governance, Sharing Resources with AWS RAM, Control VPC sharing in an AWS multi-account setup with service control policies, https://aws.amazon.com/blogs/security/control-vpc-sharing-in-an-aws-multi-account-setup-with-service-control-policies/
+
+Section 19, Governance, Sharing Resources with AWS RAM, Shareable AWS resources, https://docs.aws.amazon.com/ram/latest/userguide/shareable.html
+
+Section 19, Governance, Sharing Resources with AWS RAM, Working with shared AWS resources, https://docs.aws.amazon.com/ram/latest/userguide/working-with.html
+
+Section 19, Governance, Setting Up Cross-Account Role Access, How to use trust policies with IAM roles, https://aws.amazon.com/blogs/security/how-to-use-trust-policies-with-iam-roles/
+
+Section 19, Governance, Setting Up Cross-Account Role Access, IAM tutorial: Delegate access across AWS accounts using IAM roles, https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html
+
+Section 19, Governance, Inventory Management with AWS Config, How AWS Config Works, https://docs.aws.amazon.com/config/latest/developerguide/how-does-config-work.html
+
+Section 19, Governance, Inventory Management with AWS Config, How to auto-remediate internet accessible ports with AWS Config and AWS Systems Manager, https://aws.amazon.com/blogs/security/how-to-auto-remediate-internet-accessible-ports-with-aws-config-and-aws-system-manager/
+
+Section 19, Governance, Inventory Management with AWS Config, How to perform automated incident response in a multi-account environment, https://aws.amazon.com/blogs/security/how-to-perform-automated-incident-response-multi-account-environment/
+
+Section 19, Governance, Offloading Active Directory to Directory Service, AWS Federated Authentication with Active Directory Federation Services (AD FS), https://aws.amazon.com/blogs/security/aws-federated-authentication-with-active-directory-federation-services-ad-fs/
+
+Section 19, Governance, Exploring with Cost Explorer, Best practices for creating and managing sandbox accounts in AWS, https://aws.amazon.com/blogs/mt/best-practices-creating-managing-sandbox-accounts-aws/
+
+Section 19, Governance, Exploring with Cost Explorer, Using AWS Cost Explorer and cost allocation tags to view Amazon S3 costs by bucket, https://aws.amazon.com/blogs/mt/using-aws-cost-explorer-and-cost-allocation-tags-to-view-amazon-s3-costs-by-bucket/
+
+Section 19, Governance, Using AWS Budgets, How can I use AWS Budgets to track my spending and usage?, https://aws.amazon.com/blogs/aws-cloud-financial-management/se-how-can-i-use-aws-budgets-to-track-my-spending-and-usage/
+
+Section 19, Governance, Optimizing Costs with AWS Cost and Usage Reports, Creating Cost and Usage Reports, https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html
+
+Section 19, Governance, Optimizing Costs with AWS Cost and Usage Reports, Managing access to the AWS Billing console, https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control-access-billing.html
+
+Section 19, Governance, Auditing with Trusted Advisor, AWS Support Plans, https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html
+
+Section 19, Governance, Auditing with Trusted Advisor, AWS Trusted Advisor check reference, https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor-check-reference.html
+
+Section 19, Governance, Governance Exam Tips, AWS Managed Microsoft AD, https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_ad_connector.html
+
+Section 19, Governance, Governance Exam Tips, AWS Managed Microsoft AD, https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html
+
+Section 19, Governance, Governance Exam Tips, Delegate access across AWS accounts using IAM roles, https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html
+
+Section 19, Governance, Governance Exam Tips, Getting Started with Amazon Cognito, https://aws.amazon.com/cognito/getting-started/
+
+Section 19, Governance, Governance Exam Tips, Identity and access management for AWS SSO, https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access.html
+
+Section 19, Governance, Governance Exam Tips, Monitoring your usage and costs, https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monitoring-costs.html
+
+Section 19, Governance, Governance Exam Tips, Schedule AWS Lambda functions using EventBridge, https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-run-lambda-schedule.html
+
+Section 19, Governance, Governance Exam Tips, SNS, https://aws.amazon.com/sns/faqs/
+
+Section 19, Governance, Governance Exam Tips, Trusted Advisor, https://aws.amazon.com/premiumsupport/faqs/?nc=sn&loc=6

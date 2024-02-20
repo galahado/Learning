@@ -1,0 +1,17 @@
+Section 9, Route 53, Route 53 Overview, Amazon Route 53 FAQs, https://aws.amazon.com/route53/faqs/
+
+Section 9, Route 53, Route 53 Overview, Amazon Route 53 Quotas, https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSLimitations.html
+
+Section 9, Route 53, Route 53 Overview, List of Internet second-level domains, https://en.wikipedia.org/wiki/Second-level_domain
+
+Section 9, Route 53, Route 53 Overview, List of Internet top-level domains, https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
+
+Section 9, Route 53, Route 53 Overview, Working with private hosted zones, https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html
+
+Section 9, Route 53, Route 53 Overview, Working with public hosted zones, https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/AboutHZWorkingWith.html
+
+Section 9, Route 53, Register a Domain Name, Bootstrap Script, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1637201608533-bootstrap.txt
+
+Section 9, Route 53, Demo: Using a Weighted Routing Policy, Values that you specify when you create or update health checks, https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-creating-values.html
+
+Section 9, Route 53, Demo: Using a Failover Routing Policy, Creating and updating health checks, https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-creating.html

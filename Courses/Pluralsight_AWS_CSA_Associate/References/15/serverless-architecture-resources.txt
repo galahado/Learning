@@ -1,0 +1,23 @@
+Section 15, Serverless Architecture, Computing with Lambda, Lambda Function, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1624902841354-1043%20-%20S15-L02%20Computing%20with%20Lambda.txt
+
+Section 15, Serverless Architecture, Computing with Lambda, Lambda runtimes, https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html
+
+Section 15, Serverless Architecture, Computing with Lambda, Understanding AWS Lambda’s invoke throttling limits, https://aws.amazon.com/blogs/compute/understanding-aws-lambdas-invoke-throttle-limits/
+
+Section 15, Serverless Architecture, Computing with Lambda, What is AWS Lambda?, https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+
+Section 15, Serverless Architecture, Running Containers in ECS or EKS, Amazon Elastic Container Service Anywhere is now generally available, https://aws.amazon.com/about-aws/whats-new/2021/05/amazon-elastic-container-service-anywhere-is-now-generally-available/
+
+Section 15, Serverless Architecture, Running Containers in ECS or EKS, What is Amazon Elastic Container Service?, https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
+
+Section 15, Serverless Architecture, Removing Servers with Fargate, AWS Fargate on EKS, https://docs.aws.amazon.com/eks/latest/userguide/fargate.html
+
+Section 15, Serverless Architecture, Removing Servers with Fargate, Server-side rendering micro-frontends – the architecture, https://aws.amazon.com/blogs/compute/server-side-rendering-micro-frontends-the-architecture/
+
+Section 15, Serverless Architecture, Removing Servers with Fargate, What is AWS Fargate?, https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html
+
+Section 15, Serverless Architecture, Amazon EventBridge (CloudWatch Events), Amazon EventBridge Event Bus concepts, https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is-how-it-works-concepts.html
+
+Section 15, Serverless Architecture, Amazon EventBridge (CloudWatch Events), Amazon EventBridge event patterns, https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html
+
+Section 15, Serverless Architecture, Amazon EventBridge (CloudWatch Events), Automating stopping and starting Amazon MWAA environments to reduce cost, https://aws.amazon.com/blogs/compute/automating-stopping-and-starting-amazon-mwaa-environments-to-reduce-cost/

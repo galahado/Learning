@@ -1,0 +1,15 @@
+Section 11, Monitoring, CloudWatch Overview, Amazon CloudWatch concepts, https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html
+
+Section 11, Monitoring, CloudWatch Overview, Amazon CloudWatch FAQs, https://aws.amazon.com/cloudwatch/faqs/
+
+Section 11, Monitoring, Application Monitoring with CloudWatch Logs, Create the CloudWatch agent configuration file with the wizard, https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-cloudwatch-agent-configuration-file-wizard.html
+
+Section 11, Monitoring, Application Monitoring with CloudWatch Logs, GitHub Resources, https://github.com/pluralsight-cloud/aws-certified-solutions-architect-associate/tree/main/11-monitoring/application-monitoring-with-cloudwatch-logs
+
+Section 11, Monitoring, Application Monitoring with CloudWatch Logs, Manually create or edit the CloudWatch agent configuration file, https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html
+
+Section 11, Monitoring, Application Monitoring with CloudWatch Logs, Scaling based on Amazon SQS, https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html
+
+Section 11, Monitoring, Monitoring Exam Tips, Amazon CloudWatch concepts, https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html
+
+Section 11, Monitoring, Monitoring Exam Tips, Amazon CloudWatch FAQs, https://aws.amazon.com/cloudwatch/faqs/

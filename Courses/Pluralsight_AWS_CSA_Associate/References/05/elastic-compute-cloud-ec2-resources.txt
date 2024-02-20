@@ -1,0 +1,13 @@
+Section 5, Elastic Compute Cloud (EC2), EC2 Overview, Amazon EC2 Instance Family Types, https://aws.amazon.com/ec2/instance-types/
+
+Section 5, Elastic Compute Cloud (EC2), Security Groups and Bootstrap Scripts, Updated bootstrap script, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1684344962678-Updated%20bootstrap%20script.txt
+
+Section 5, Elastic Compute Cloud (EC2), EC2 Metadata and User Data, Retrieve instance metadata, https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html
+
+Section 5, Elastic Compute Cloud (EC2), EC2 Metadata and User Data, Updated Bootstrap Scripts, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1684403673232-Updated%20Bootstrap%20Scripts.txt
+
+Section 5, Elastic Compute Cloud (EC2), EC2 Metadata and User Data, Work with instance user data, https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-add-user-data.html
+
+Section 5, Elastic Compute Cloud (EC2), Optimizing with EC2 Placement Groups, Placement groups, https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
+
+Section 5, Elastic Compute Cloud (EC2), Deploying vCenter in AWS with VMware Cloud on AWS, VMware Cloud on AWS | FAQs, https://aws.amazon.com/vmware/faqs/

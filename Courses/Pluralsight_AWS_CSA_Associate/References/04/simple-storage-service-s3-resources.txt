@@ -1,0 +1,43 @@
+Section 4, Simple Storage Service (S3), Hosting a Static Website Using S3, HTML & JSON Files, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1662520225874-s3website.zip
+
+Section 4, Simple Storage Service (S3), Versioning Objects in S3, Deleting objects from versioning-suspended buckets, https://docs.aws.amazon.com/AmazonS3/latest/userguide/DeletingObjectsfromVersioningSuspendedBuckets.html
+
+Section 4, Simple Storage Service (S3), Versioning Objects in S3, Setting permissions for website access, https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html
+
+Section 4, Simple Storage Service (S3), Versioning Objects in S3, Using versioning in S3 buckets, https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html
+
+Section 4, Simple Storage Service (S3), S3 Storage Classes, Amazon S3 Glacier FAQs > Storage Classes, https://aws.amazon.com/s3/faqs/#Storage_Classes
+
+Section 4, Simple Storage Service (S3), S3 Storage Classes, Amazon S3 Storage Classes, https://aws.amazon.com/s3/storage-classes/
+
+Section 4, Simple Storage Service (S3), S3 Storage Classes, Retrieving S3 Glacier Archives, https://docs.aws.amazon.com/amazonglacier/latest/dev/downloading-an-archive-two-steps.html
+
+Section 4, Simple Storage Service (S3), Lifecycle Management with S3, Amazon S3 Storage Classes, https://aws.amazon.com/s3/storage-classes/
+
+Section 4, Simple Storage Service (S3), Lifecycle Management with S3, Transitioning objects using Amazon S3 Lifecycle, https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html
+
+Section 4, Simple Storage Service (S3), Optimizing S3 Performance, AWS KMS request quotas are now largely adjustable, https://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html
+
+Section 4, Simple Storage Service (S3), Optimizing S3 Performance, For Amazon S3 request rates, what's the difference between prefixes and nested folders? How many prefixes can I have in an S3 bucket?, https://aws.amazon.com/premiumsupport/knowledge-center/s3-prefix-nested-folders-difference/
+
+Section 4, Simple Storage Service (S3), Optimizing S3 Performance, S3 Transfer Acceleration, https://aws.amazon.com/s3/transfer-acceleration/
+
+Section 4, Simple Storage Service (S3), Backing up Data With S3 Replication, AWS Certification FAQ, https://aws.amazon.com/certification/faqs/
+
+Section 4, Simple Storage Service (S3), Backing up Data With S3 Replication, NEW – Replicate Existing Objects with Amazon S3 Batch Replication, https://aws.amazon.com/blogs/aws/new-replicate-existing-objects-with-amazon-s3-batch-replication/
+
+Section 4, Simple Storage Service (S3), Backing up Data With S3 Replication, Replicating objects, https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html
+
+Section 4, Simple Storage Service (S3), S3 Exam Tips, Amazon S3 FAQs, https://aws.amazon.com/s3/faqs/
+
+Section 4, Simple Storage Service (S3), S3 Exam Tips, Amazon S3 Storage Classes, https://aws.amazon.com/s3/storage-classes/
+
+Section 4, Simple Storage Service (S3), S3 Exam Tips, Announcing the new Amazon S3 Glacier Instant Retrieval storage class, https://aws.amazon.com/about-aws/whats-new/2021/11/amazon-s3-glacier-instant-retrieval-storage-class/
+
+Section 4, Simple Storage Service (S3), S3 Exam Tips, Best practices design patterns: optimizing Amazon S3 performance, https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html
+
+Section 4, Simple Storage Service (S3), S3 Exam Tips, Managing your storage lifecycle, https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html
+
+Section 4, Simple Storage Service (S3), S3 Exam Tips, Retrieving S3 Glacier Archives, https://docs.aws.amazon.com/amazonglacier/latest/dev/downloading-an-archive-two-steps.html
+
+Section 4, Simple Storage Service (S3), S3 Exam Tips, Security Best Practices for Amazon S3, https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html

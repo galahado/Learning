@@ -1,0 +1,11 @@
+Section 1, Introduction, Course Introduction, Bootscript, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1649260792097-bootscript.txt
+
+Section 1, Introduction, Course Introduction, Study Guide (PDF) Course Slides Part 1, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1667575892970-1043%20PDF%20Export%202022_Part1.pdf
+
+Section 1, Introduction, Course Introduction, Study Guide (PDF) Course Slides Part 2, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1667496840658-1043%20PDF%20Export%202022_Part2.pdf
+
+Section 1, Introduction, Course Introduction, Study Guide: Table of Contents PDF, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1669220704360-1043%20AWS%20Certified%20Solutions%20Architect%20-%20Associate%20%28SAA-C03%29%20Table%20of%20Contents.pdf
+
+Section 1, Introduction, Exam Guide, Exam Guide, https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf
+
+Section 1, Introduction, Course Updates and Changelogs, Changelog, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1699983809697-1043StudentFacingChangelog_November2023_Updated.pdf

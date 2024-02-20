@@ -1,0 +1,9 @@
+Section 18, Caching, Fixing IP Caching with Global Accelerator, How AWS Global Accelerator works, https://docs.aws.amazon.com/global-accelerator/latest/dg/introduction-how-it-works.html
+
+Section 18, Caching, Fixing IP Caching with Global Accelerator, Improving Performance on AWS and Hybrid Networks, https://aws.amazon.com/blogs/networking-and-content-delivery/improving-performance-on-aws-and-hybrid-networks/
+
+Section 18, Caching, Fixing IP Caching with Global Accelerator, Introducing AWS Global Accelerator IPv6, https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-global-accelerator-ipv6/
+
+Section 18, Caching, Caching Exam Tips, Amazon DynamoDB Accelerator (DAX), https://aws.amazon.com/dynamodb/dax/
+
+Section 18, Caching, Caching Exam Tips, Choosing between Redis and Memcached, https://aws.amazon.com/elasticache/redis-vs-memcached/

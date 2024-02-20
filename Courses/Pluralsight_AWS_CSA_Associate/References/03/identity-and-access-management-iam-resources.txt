@@ -1,0 +1,7 @@
+Section 3, Identity and Access Management (IAM), Controlling Users' Actions with IAM Policy Documents, AWS Identity and Access Management (IAM) FAQs, https://aws.amazon.com/iam/faqs/
+
+Section 3, Identity and Access Management (IAM), Controlling Users' Actions with IAM Policy Documents, Determining whether a request is allowed or denied within an account, https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow
+
+Section 3, Identity and Access Management (IAM), Controlling Users' Actions with IAM Policy Documents, Example IAM identity-based policies, https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html
+
+Section 3, Identity and Access Management (IAM), Controlling Users' Actions with IAM Policy Documents, Overview of JSON policies, https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#access_policies-json

@@ -1,0 +1,17 @@
+Section 20, Migration, Storage Gateway, AWS Storage Gateway - Use cases, https://aws.amazon.com/storagegateway#Use_cases
+
+Section 20, Migration, Storage Gateway, AWS Storage Gateway FAQs, https://aws.amazon.com/storagegateway/faqs/
+
+Section 20, Migration, Storage Gateway, Creating a Tape Gateway, https://docs.aws.amazon.com/storagegateway/latest/userguide/create-tape-gateway.html
+
+Section 20, Migration, Storage Gateway, Creating a Volume Gateway, https://docs.aws.amazon.com/storagegateway/latest/userguide/create-volume-gateway-volume.html
+
+Section 20, Migration, Storage Gateway, What is Amazon S3 File Gateway?, https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html
+
+Section 20, Migration, Storage Gateway, What is AWS Storage Gateway?, https://docs.aws.amazon.com/storagegateway/latest/userguide/WhatIsStorageGateway.html
+
+Section 20, Migration, AWS DataSync, AWS DataSync FAQs, https://aws.amazon.com/datasync/faqs/
+
+Section 20, Migration, AWS DataSync, How AWS DataSync works > Components and terminology, https://docs.aws.amazon.com/datasync/latest/userguide/how-datasync-works.html#terminology
+
+Section 20, Migration, Migrating Workloads to AWS Using AWS Application Discovery Service or AWS Application Migration Service (AWS MGN), Disaster Recovery (DR) objectives, https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html

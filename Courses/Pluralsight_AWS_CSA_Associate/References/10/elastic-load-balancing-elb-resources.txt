@@ -1,0 +1,9 @@
+Section 10, Elastic Load Balancing (ELB), ELB Overview, Elastic Load Balancing FAQs, https://aws.amazon.com/elasticloadbalancing/faqs/
+
+Section 10, Elastic Load Balancing (ELB), ELB Overview, Elastic Load Balancing features, https://aws.amazon.com/elasticloadbalancing/features/
+
+Section 10, Elastic Load Balancing (ELB), ELB Overview, Health checks for your target groups, https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-health-checks.html
+
+Section 10, Elastic Load Balancing (ELB), Using Application Load Balancers, User Data Script, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1673027800157-Lesson%20Reference-Containers%20and%20Pods.txt
+
+Section 10, Elastic Load Balancing (ELB), ELB Exam Tips, Application Load Balancer Support for End-to-End HTTP/2 and gRPC, https://aws.amazon.com/blogs/aws/new-application-load-balancer-support-for-end-to-end-http-2-and-grpc/

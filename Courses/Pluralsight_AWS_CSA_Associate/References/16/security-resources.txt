@@ -1,0 +1,13 @@
+Section 16, Security, Logging API Calls with CloudTrail, AWS CloudTrail FAQs, https://aws.amazon.com/cloudtrail/faqs/
+
+Section 16, Security, Logging API Calls with CloudTrail, Validating CloudTrail log file integrity, https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-intro.html
+
+Section 16, Security, Protecting Applications with Shield, AWS Shield FAQs, https://aws.amazon.com/shield/faqs/
+
+Section 16, Security, Protecting Applications with Shield, AWS Shield Features > Specialized support, https://aws.amazon.com/shield/features/#Specialized_support
+
+Section 16, Security, Centralizing WAF Management via AWS Firewall Manager, Lesson Slides, https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1703695948777-S16_L5_Centralizing%20WAF%20Management%20via%20AWS%20Firewall%20Manager.pdf
+
+Section 16, Security, Managing Encryption Keys with KMS and CloudHSM, AWS Key Management Service FAQs, https://aws.amazon.com/kms/faqs/
+
+Section 16, Security, Managing Encryption Keys with KMS and CloudHSM, Deleting AWS KMS keys, https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys.html
