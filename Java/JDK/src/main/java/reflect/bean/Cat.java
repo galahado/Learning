@@ -1,4 +1,4 @@
-package reflect;
+package reflect.bean;
 
 public class Cat {
 

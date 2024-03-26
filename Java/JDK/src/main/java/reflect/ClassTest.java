@@ -34,7 +34,7 @@ public class ClassTest {
 
     @Test
     void getNames() throws Exception {
-        Class<?> clazz = Class.forName("reflect.Person");
+        Class<?> clazz = Class.forName("reflect.bean.Person");
         System.out.println(clazz.getName());
         System.out.println(clazz.getSimpleName());
     }
@@ -42,7 +42,7 @@ public class ClassTest {
 
     @Test
     void getFields() throws Exception {
-        Class<?> clazz = Class.forName("reflect.Man");
+        Class<?> clazz = Class.forName("reflect.bean.Man");
         // get the public fields from current class and the superclass
         Field[] fields = clazz.getFields();
         for (Field field : fields) {
@@ -52,7 +52,7 @@ public class ClassTest {
 
     @Test
     void getAllFields() throws Exception {
-        Class<?> clazz = Class.forName("reflect.Man");
+        Class<?> clazz = Class.forName("reflect.bean.Man");
         // get the public fields from only current class
         Field[] fields = clazz.getDeclaredFields();
         for (Field field : fields) {
@@ -62,7 +62,7 @@ public class ClassTest {
 
     @Test
     void getMethods() throws Exception {
-        Class<?> clazz = Class.forName("reflect.Man");
+        Class<?> clazz = Class.forName("reflect.bean.Man");
         // get all the public methods from current class and the ones inherited
         Method[] methods = clazz.getMethods();
         for (Method method : methods) {
@@ -73,7 +73,7 @@ public class ClassTest {
 
     @Test
     void getDeclaredMethods() throws Exception {
-        Class<?> clazz = Class.forName("reflect.Person");
+        Class<?> clazz = Class.forName("reflect.bean.Person");
         // get all methods from current class
         Method[] methods = clazz.getDeclaredMethods();
         for (Method method : methods) {
@@ -84,7 +84,7 @@ public class ClassTest {
 
     @Test
     void getConstructors() throws Exception {
-        Class<?> clazz = Class.forName("reflect.Man");
+        Class<?> clazz = Class.forName("reflect.bean.Man");
         // get all the public methods from current class and the ones inherited
         Constructor<?>[] constructors = clazz.getConstructors();
         for (Constructor<?> constructor : constructors) {
@@ -95,7 +95,7 @@ public class ClassTest {
 
     @Test
     void getDeclaredConstructors() throws Exception {
-        Class<?> clazz = Class.forName("reflect.Person");
+        Class<?> clazz = Class.forName("reflect.bean.Person");
         // get all the public methods from current class and the ones inherited
         Constructor<?>[] constructors = clazz.getDeclaredConstructors();
         for (Constructor<?> constructor : constructors) {
@@ -105,20 +105,20 @@ public class ClassTest {
 
     @Test
     void getPackage() throws Exception {
-        Class<?> aClass = Class.forName("reflect.Person");
+        Class<?> aClass = Class.forName("reflect.bean.Person");
         System.out.println(aClass.getPackage().getName());
         System.out.println(aClass.getPackageName());
     }
 
     @Test
     void getSuperClass() throws Exception {
-        Class<?> aClass = Class.forName("reflect.Man");
+        Class<?> aClass = Class.forName("reflect.bean.Man");
         System.out.println(aClass.getSuperclass().getName());
     }
 
     @Test
     void getInterfaces() throws Exception {
-        Class<?> aClass = Class.forName("reflect.Person");
+        Class<?> aClass = Class.forName("reflect.bean.Person");
         Class<?>[] interfaces = aClass.getInterfaces();
         for (Class<?> c : interfaces) {
             System.out.println(c.getName());
@@ -127,7 +127,7 @@ public class ClassTest {
 
     @Test
     void getAnnotations() throws Exception {
-        Class<?> aClass = Class.forName("reflect.Man");
+        Class<?> aClass = Class.forName("reflect.bean.Man");
         Annotation[] annotations = aClass.getAnnotations();
         for (Annotation annotation : annotations) {
             System.out.println(annotation);

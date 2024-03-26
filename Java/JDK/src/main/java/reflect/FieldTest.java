@@ -2,10 +2,10 @@ package reflect;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
+
+import reflect.bean.Cat;
 
 public class FieldTest {
 

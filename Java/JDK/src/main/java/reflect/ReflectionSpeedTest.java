@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Method;
 
+import reflect.bean.Cat;
+
 public class ReflectionSpeedTest {
 
     @Test
@@ -19,7 +21,7 @@ public class ReflectionSpeedTest {
 
 
         // using reflection
-        Class<?> aClass = Class.forName("reflect.Cat");
+        Class<?> aClass = Class.forName("reflect.bean.Cat");
         Method method = aClass.getMethod("doNothing");
         Object o = aClass.getDeclaredConstructor().newInstance();
 

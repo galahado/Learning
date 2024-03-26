@@ -1,4 +1,4 @@
-package reflect;
+package reflect.bean;
 
 public class Person implements Cloneable, Comparable<Person> {
     public String name;
