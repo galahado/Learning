@@ -133,4 +133,10 @@ public class ClassTest {
             System.out.println(annotation);
         }
     }
+
+    @Test
+    void arrayType() throws Exception {
+        Class<?> aClass = Class.forName("reflect.bean.Man");
+        System.out.println(aClass.arrayType());
+    }
 }
