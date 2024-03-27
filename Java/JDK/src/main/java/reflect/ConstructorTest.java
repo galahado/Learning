@@ -48,6 +48,8 @@ public class ConstructorTest
 	{
 		Class<?> aClass = Class.forName("reflect.bean.User");
 		Constructor<?> constructor = aClass.getDeclaredConstructor(int.class, String.class);
+		// access the private constructor
+		constructor.setAccessible(true);
 		System.out.println(constructor.newInstance(38, "Chuanqi Zhang"));
 	}
 }
