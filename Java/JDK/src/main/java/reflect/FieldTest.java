@@ -26,7 +26,7 @@ public class FieldTest {
     }
 
     @Test
-    void getModifiers() throws Exception{
+    void getModifiers() throws Exception {
         Class<?> clazz = Class.forName("reflect.bean.Person");
         // get the public fields from only current class
         Field[] fields = clazz.getDeclaredFields();
@@ -37,12 +37,35 @@ public class FieldTest {
 
 
     @Test
-    void getType() throws Exception{
+    void getType() throws Exception {
         Class<?> clazz = Class.forName("reflect.bean.Person");
         // get the public fields from only current class
         Field[] fields = clazz.getDeclaredFields();
         for (Field field : fields) {
             System.out.println(field.getName() + ", type: " + field.getType());
         }
+    }
+
+
+    @Test
+    void set() throws Exception {
+        Class<?> aClass = Class.forName("reflect.bean.Student");
+        Object o = aClass.getConstructor().newInstance();
+
+        // public field
+        Field age = aClass.getField("age");
+        age.set(o, 15);
+        System.out.println(o);
+        System.out.println(age.get(o));
+
+        // private static field
+        Field name = aClass.getDeclaredField("name");
+        name.setAccessible(true);
+//        name.set(o, "Chuanqi");
+       // since name is static, we can set object as null
+        name.set(null, "Chuanqi Zhang");
+        System.out.println(o);
+        System.out.println(name.get(o));
+        System.out.println(name.get(null));
     }
 }
