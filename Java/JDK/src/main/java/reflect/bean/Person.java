@@ -21,7 +21,7 @@ public class Person implements Cloneable, Comparable<Person> {
 
     }
 
-    public void m1(){
+    public void m1(String name, int age, double salary){
 
     }
 

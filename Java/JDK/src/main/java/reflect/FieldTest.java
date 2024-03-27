@@ -24,4 +24,25 @@ public class FieldTest {
         Field name = clazz.getDeclaredField("age");
         System.out.println(name.get(c));
     }
+
+    @Test
+    void getModifiers() throws Exception{
+        Class<?> clazz = Class.forName("reflect.bean.Person");
+        // get the public fields from only current class
+        Field[] fields = clazz.getDeclaredFields();
+        for (Field field : fields) {
+            System.out.println(field.getName() + ", modifier: " + field.getModifiers());
+        }
+    }
+
+
+    @Test
+    void getType() throws Exception{
+        Class<?> clazz = Class.forName("reflect.bean.Person");
+        // get the public fields from only current class
+        Field[] fields = clazz.getDeclaredFields();
+        for (Field field : fields) {
+            System.out.println(field.getName() + ", type: " + field.getType());
+        }
+    }
 }
