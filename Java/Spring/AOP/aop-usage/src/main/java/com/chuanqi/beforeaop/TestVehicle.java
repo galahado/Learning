@@ -1,10 +1,13 @@
 package com.chuanqi.beforeaop;
 
-public class Test {
+import org.junit.jupiter.api.Test;
 
+public class TestVehicle {
     // This package shows us why we need AOP
     // This is Before AOP/proxy is used, and there is redundant code
-    public static void main(String[] args) {
+
+    @Test
+    void test() {
         Vehicle vehicle = new Bus();
         vehicle.run();
 
