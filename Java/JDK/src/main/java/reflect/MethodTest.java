@@ -41,4 +41,23 @@ public class MethodTest {
             System.out.println(parameterType);
         }
     }
+
+
+    @Test
+    void invokePublicMethod() throws Exception {
+        Class<?> clazz = Class.forName("reflect.bean.Boss");
+        Object o = clazz.getConstructor().newInstance();
+        Method hi = clazz.getDeclaredMethod("hi", String.class);
+        hi.invoke(o, "Hello");
+    }
+
+    @Test
+    void invokePrivateStaticMethod() throws Exception {
+        Class<?> clazz = Class.forName("reflect.bean.Boss");
+        Object o = clazz.getConstructor().newInstance();
+        Method say = clazz.getDeclaredMethod("say", int.class, String.class, char.class);
+        say.setAccessible(true);
+        // we can set object to null since it's a static method
+        System.out.println(say.invoke(null, 10, "Hello", 'c'));
+    }
 }
